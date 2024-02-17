@@ -1,0 +1,67 @@
+.dreams-section {
+    margin-top: 35px;
+}
+
+.dreams-section h3 {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+}
+
+.dreams-section .card {
+    height: 300px;
+}
+
+.dreams-section .card-title {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.dreams-section .card img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.dreams-section .overlay-sec {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.dreams-section .card:hover .overlay-sec {
+    opacity: 1;
+}
+
+.dreams-true-slider {
+    padding: 0;
+    margin: 0 -4px;
+}
+
+.dreams-true-slider .slider-sec {
+    padding: 0 5px;
+}
+
+.dreams-true-slider img {
+    width: 100%;
+}
+
+.dreams-true-slider .slick-track>div:first-child .slider-sec {
+    padding-left: 0;
+}
+
+.dreams-true-slider .slick-next:before,
+.dreams-true-slider .slick-prev:before {
+    color: #f26b22;
+}

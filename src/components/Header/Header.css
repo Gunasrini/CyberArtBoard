@@ -1,0 +1,66 @@
+.site-logo {
+    width: 80px;
+}
+
+.header {
+    background: #f8f8f8;
+}
+
+.header .nav-link {
+    color: #000;
+}
+
+.header .nav-link.active,
+.header .nav-link:hover {
+    color: #f26b22;
+}
+
+.header .navbar-brand {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header-buttons .icons {
+    color: #000;
+    margin: 0 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.header-buttons .login img {
+    width: 30px;
+}
+
+.header-buttons .cart img,
+.header-buttons .contact img {
+    width: 25px;
+}
+
+.header-buttons .folder img {
+    width: 20px;
+}
+
+.header-buttons .username img {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.header-buttons .icons:hover {
+    color: #f26b22;
+}
+
+.header-buttons .icons:last-child {
+    margin-right: 0;
+}
+
+.header-buttons .icons.username {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-left: 1px solid #ccc;
+    padding-left: 15px;
+}
+
+.header-buttons .icons.username i {
+    margin-right: 5px;
+}

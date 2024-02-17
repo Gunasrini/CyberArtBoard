@@ -1,0 +1,76 @@
+.billboard-section {
+    margin: 20px 0 35px;
+}
+
+.billboard-section .row.alternate {
+    padding: 25px 0;
+}
+
+.billboard-section .card {
+    height: auto;
+}
+
+.billboard-section .card-header {
+    background-color: #000;
+    height: 100%;
+}
+
+.billboard-section .card-title {
+    text-transform: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+form.search-option {
+    display: flex;
+    margin-left: auto;
+    border: 2px solid;
+    border-radius: 50px;
+    padding: 3px 15px 3px 5px;
+    align-items: center;
+    min-width: 350px;
+}
+
+.search-option .form-control {
+    padding: 0 10px 0 0;
+    border: 0;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.search-option .fa-magnifying-glass {
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.billboard-section .list-item {
+    padding: 0 0 15px 15px;
+}
+
+.billboard-section .row>.list-item:first-child {
+    padding-left: 0;
+}
+
+.billboard-section .list-item img {
+    width: 100%;
+    transition: transform 0.3s;
+    box-shadow: 1px 2px 9px #ccc;
+    border: 1px solid #ccc;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.billboard-section .list-item img:hover {
+    transform: scale(0.9);
+}

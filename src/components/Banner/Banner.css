@@ -1,0 +1,51 @@
+.banner-section {
+    background: #000;
+    padding: 50px 0;
+}
+
+.banner-section h2.wrapped-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 75px;
+    max-width: 63%;
+    letter-spacing: 1.2px;
+    line-height: 1.5em;
+}
+
+.banner-sub-cont {
+    display: flex;
+    justify-content: right;
+}
+
+.left-radio-check .item {
+    background: #fff;
+    padding: 15px 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    color: #000;
+    text-decoration: none;
+}
+
+.left-radio-check .item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+.banner-sub-cont .badge {
+    width: 45px;
+    height: 45px;
+    display: block !important;
+    margin-left: auto;
+    border-radius: 100%;
+}
+
+.banner-sub-cont .badge.orange {
+    background: #f26b22;
+}
+
+.banner-sub-cont .badge.black {
+    background: #000;
+}

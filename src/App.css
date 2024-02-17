@@ -1,0 +1,194 @@
+.login-container {
+    margin-top: 6%;
+}
+
+.login-title {
+    margin: 15px 0 0;
+    color: #f26b22;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.login-signup-info .btn {
+    padding: 0;
+}
+
+.login-signup-info .btn:hover {
+    text-decoration: underline;
+}
+
+.login-signup-info .btn:last-child {
+    margin-left: auto;
+}
+
+.login-signup-info {
+    display: flex;
+    margin-top: 10px;
+}
+
+.login-logo {
+    width: 120px;
+}
+
+.highlighted-text,
+.login-signup-info .highlighted-text:hover {
+    color: #f26b22;
+}
+
+.login-width {
+    min-width: 200px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sketch2design-banner-section {
+    background: #000;
+    padding: 20px 20px 50px;
+    color: #939393;
+    margin-bottom: 15px;
+}
+
+.sketch2design-banner-section h3 {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 0;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.sketch2design-banner-section p {
+    font-size: 18px;
+}
+
+.sketch2design-banner-section h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sketch2design-banner-section li {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.start-button {
+    text-align: right;
+    margin: 100px 0 0;
+}
+
+.start-button .btn {
+    background: #fff;
+    border-radius: 50px;
+    min-width: 100px;
+    padding: 5px 0;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+}
+
+.start-button .btn:hover {
+    background: #f26b22;
+    color: #fff;
+}
+
+.design-generator .select-row {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.design-generator .select-row .form-control {
+    margin-right: 20px;
+    appearance: auto;
+}
+
+.design-generator .select-row .form-control:last-child {
+    margin-right: 0;
+}
+
+.design-generator h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+textarea.prompt.form-control {
+    min-height: 150px;
+    background: #f8f8f8;
+    border-radius: 0;
+    padding: 15px 20px;
+}
+
+.design-generator .prompt-section h4 {
+    font-weight: 700;
+    color: #000;
+    font-size: 18px;
+}
+
+.design-generator-desc {
+    margin-top: 25px;
+}
+
+.design-generator-desc p {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.design-generator .description-row img {
+    padding: 5px;
+}
+
+.design-templates-sec h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #61677A;
+    margin-bottom: 15px;
+}
+
+.design-templates-sec .list {
+    margin-right: 15px;
+    text-align: center;
+}
+
+.design-templates-sec .list img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.design-templates-sec .list h6 {
+    color: #61677A;
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.footer {
+    text-align: center;
+    background: #000;
+    padding: 18px 0;
+    color: #fff;
+}
+
+.footer-cont {
+    display: flex;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #f26b22;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer ul.nav {
+    margin-left: auto;
+}
+
+.footer .nav-link {
+    color: #f26b22;
+    padding: 0 0 0 20px;
+}
