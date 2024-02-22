@@ -15,6 +15,8 @@ import AboutUs from './pages/AboutUs';
 import MyAccount from './pages/MyAccount';
 import ContactForm from './pages/ContactForm';
 
+import '../src/styles/responsive.css';
+
 function App() {
   return (
     <>

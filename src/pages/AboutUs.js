@@ -1,13 +1,12 @@
 import React from 'react'
 import '../styles/about.css';
 import Header from '../components/Header/Header'
-import Footer from './Footer'
-import aboutBanner from '../assets/images/AboutUs/about-banner.jpg'
-import aboutImg1 from '../assets/images/AboutUs/aboutImg1.jpg';
-import aboutImg2 from '../assets/images/AboutUs/aboutImg2.jpg';
-import aboutImg3 from '../assets/images/AboutUs/aboutImg3.jpg';
-import aboutImg4 from '../assets/images/AboutUs/aboutImg4.jpg';
-import aboutImg5 from '../assets/images/AboutUs/aboutImg5.jpg';
+import aboutBanner from '../assets/images/AboutUs/about-banner.png'
+import aboutImg1 from '../assets/images/AboutUs/aboutImg1.png';
+import aboutImg2 from '../assets/images/AboutUs/aboutImg2.png';
+import aboutImg3 from '../assets/images/AboutUs/aboutImg3.png';
+import aboutImg4 from '../assets/images/AboutUs/aboutImg4.png';
+import aboutImg5 from '../assets/images/AboutUs/aboutImg5.png';
 
 export default function AboutUs() {
     return (
@@ -79,7 +78,6 @@ export default function AboutUs() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

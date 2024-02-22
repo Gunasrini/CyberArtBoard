@@ -59,7 +59,6 @@ export default function DesignGenerator() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

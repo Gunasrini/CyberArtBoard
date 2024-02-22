@@ -47,10 +47,14 @@
 .dreams-true-slider {
     padding: 0;
     margin: 0 -4px;
+    display: flex;
+    z-index: 2;
 }
 
 .dreams-true-slider .slider-sec {
     padding: 0 5px;
+    width: 33%;
+    position: relative;
 }
 
 .dreams-true-slider img {
@@ -64,4 +68,19 @@
 .dreams-true-slider .slick-next:before,
 .dreams-true-slider .slick-prev:before {
     color: #f26b22;
+}
+
+.dreams-true-slider .slider-sec h3 {
+    color: #000;
+    text-transform: inherit;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    margin: 0;
+    left: 30px;
+    font-size: 20px;
+}
+
+.dreams-true-slider .slider-sec a {
+    text-decoration: none;
 }

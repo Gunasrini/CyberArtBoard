@@ -1,5 +1,5 @@
 .billboard-section {
-    margin: 20px 0 35px;
+    margin: 30px 0 35px;
 }
 
 .billboard-section .row.alternate {
@@ -54,7 +54,7 @@ form.search-option {
 }
 
 .billboard-section .list-item {
-    padding: 0 0 15px 15px;
+    padding: 0 0 5px 5px;
 }
 
 .billboard-section .row>.list-item:first-child {
@@ -73,4 +73,8 @@ form.search-option {
 
 .billboard-section .list-item img:hover {
     transform: scale(0.9);
+}
+
+.billboard-section .row:last-child>div {
+    padding-bottom: 0;
 }

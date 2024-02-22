@@ -61,7 +61,6 @@ export default function ContactForm() {
                     </form>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

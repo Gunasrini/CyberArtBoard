@@ -15,6 +15,7 @@
 .banner-sub-cont {
     display: flex;
     justify-content: right;
+    position: relative;
 }
 
 .left-radio-check .item {
@@ -48,4 +49,35 @@
 
 .banner-sub-cont .badge.black {
     background: #000;
+}
+
+.design-template-hover-sec {
+    position: absolute;
+    bottom: auto;
+    right: 0;
+    background: #fff;
+    margin-top: 10px;
+    padding: 20px 35px;
+    width: 70%;
+    box-shadow: 1px 2px 10px #ccc;
+    opacity: 0;
+    z-index: 1;
+}
+
+.design-template-hover-sec .list {
+    text-align: center;
+    margin-right: 15px;
+}
+
+.design-template-hover-sec .list h6 {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.design-template-hover-sec h4 {
+    margin-bottom: 15px;
+}
+
+.design-template-hover-sec .list img {
+    width: 100%;
 }

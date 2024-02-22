@@ -126,7 +126,6 @@ export default function MyAccount() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

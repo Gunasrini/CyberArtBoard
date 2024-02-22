@@ -30,7 +30,6 @@ export default function SustainableCustomApparel() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

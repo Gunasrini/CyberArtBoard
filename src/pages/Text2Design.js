@@ -57,6 +57,9 @@ export default function Text2Design() {
                         </div>
                     </div>
                 </div>
+                <div className='products-below-content'>
+                    <p>Transform your ideas into stunning designs effortlessly with our AI-powered Text-to-Design feature. Simply describe your vision in natural language, and let our advanced algorithms bring it to life with precision and speed. Say goodbye to tedious design processes and hello to innovation at the speed of thought.</p>
+                </div>
             </div>
         </>
     )

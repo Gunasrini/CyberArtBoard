@@ -20,9 +20,12 @@
     font-weight: bold;
 }
 
+.header-buttons {
+    display: flex;
+}
+
 .header-buttons .icons {
     color: #000;
-    margin: 0 10px;
     display: inline-block;
     cursor: pointer;
 }
@@ -63,4 +66,25 @@
 
 .header-buttons .icons.username i {
     margin-right: 5px;
+}
+
+.header-buttons li.nav-item {
+    list-style: none;
+    margin-left: 15px;
+}
+
+.header-buttons i {
+    font-size: 25px;
+}
+
+.header-buttons ul.dropdown-menu {
+    border-radius: 0;
+    margin-top: 10px;
+    padding: 8px 0;
+    min-width: 250px;
+}
+
+.header-buttons a.dropdown-item {
+    font-weight: 600;
+    padding: 5px 20px;
 }

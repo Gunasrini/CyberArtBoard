@@ -29,7 +29,6 @@ export default function Products() {
                     <Route path='sketch2design' element={<Sketch2Design />} />
                 </Routes>
             </div>
-            <Footer />
         </>
     )
 }

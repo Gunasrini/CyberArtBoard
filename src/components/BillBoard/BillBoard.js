@@ -20,7 +20,7 @@ import Img2DesignModal from '../../modals/Img2DesignModal';
 
 export default function BillBoard() {
     return (
-        <div className='dreams-section billboard-section'>
+        <div className='dreams-section billboard-section mb-0'>
             <div className='container'>
                 <div className='row d-flex align-items-center'>
                     <h3>Design BillBoard</h3>

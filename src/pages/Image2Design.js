@@ -60,6 +60,9 @@ export default function Image2Design() {
                         </div>
                     </div>
                 </div>
+                <div className='products-below-content'>
+                    <p>Revolutionize your creative process with our Image-to-Design AI feature. Just upload an image or describe your vision, and watch as our cutting-edge AI algorithms transform it into captivating designs. Say goodbye to guesswork and hello to effortless creativity, accelerating your path from inspiration to implementation.</p>
+                </div>
             </div>
             <Img2DesignModal />
         </>

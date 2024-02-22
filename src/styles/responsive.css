@@ -1,0 +1,40 @@
+@media screen and (min-width: 320px) and (max-width:414px) {
+    .design-templates-sec .list a {
+        text-decoration: none;
+    }
+
+    .banner-section h2.wrapped-text {
+        font-size: 25px;
+        max-width: 100%;
+    }
+
+    .banner-section {
+        padding: 30px 15px;
+    }
+
+    .left-radio-check .item {
+        padding: 5px 10px;
+    }
+
+    .left-radio-check .item h3 {
+        font-size: 15px;
+    }
+
+    .dreams-true-slider .slider-sec {
+        width: 100%;
+        height: auto;
+    }
+
+    .dreams-true-slider {
+        flex-direction: column;
+    }
+
+    .dreams-section {
+        margin-top: 20px;
+    }
+
+    .dreams-section h3 {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+}
