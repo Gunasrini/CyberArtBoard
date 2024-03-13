@@ -57,7 +57,7 @@ export default function MyAccount() {
                             </div>
                         </div>
                         <div className='generate-btn'>
-                            <span className='icon-img'><img src={iconImg} /></span>
+                            <span className='icon-img'><img src={iconImg} alt=''/></span>
                             <Link className='btn' to="">Save</Link>
                         </div>
                     </div>

@@ -1,6 +1,5 @@
 import React from 'react'
 import iconImg from '../assets/images/icon.png';
-import Sketch2DesignSectionBanner from './Sketch2DesignSectionBanner';
 import generateImg1 from '../assets/images/generateImg1.png';
 import generateImg2 from '../assets/images/generateImg2.png';
 import generateImg3 from '../assets/images/generateImg3.png';
@@ -38,7 +37,7 @@ export default function Sketch2Design() {
                                 <button type='submit' className='btn form-control'><strong>Very</strong> (Subtle)</button>
                             </div>
                             <div className='generate-btn'>
-                                <span className='icon-img'><img src={iconImg} /></span>
+                                <span className='icon-img'><img src={iconImg}  alt=""/></span>
                                 <Link to='/products/order' className='btn'>Generate</Link>
                             </div>
                         </form>

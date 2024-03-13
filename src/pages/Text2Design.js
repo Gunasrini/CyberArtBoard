@@ -27,7 +27,7 @@ export default function Text2Design() {
                                 <textarea className='form-control prompt' placeholder="Negative Prompt:"></textarea>
                             </div>
                             <div className='generate-btn'>
-                                <span className='icon-img'><img src={iconImg} /></span>
+                                <span className='icon-img'><img src={iconImg}  alt=""/></span>
                                 <Link to='/products/order' title='Generate' className='btn'>Generate</Link>
                             </div>
                         </form>

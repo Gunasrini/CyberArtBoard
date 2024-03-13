@@ -1,5 +1,4 @@
 import React from 'react'
-import Slider from 'react-slick';
 import sustainCustomApparel from '../src/assets/images/DreamsTrue/sustainable-custom-apparel.png';
 import text2design from '../src/assets/images/DreamsTrue/text2designs.png';
 import image2design from '../src/assets/images/DreamsTrue/image2designs.png';

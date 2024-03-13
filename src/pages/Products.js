@@ -5,7 +5,7 @@ import Text2Design from './Text2Design';
 import { NavLink, Route, Routes } from 'react-router-dom';
 import Image2Design from './Image2Design';
 import Sketch2Design from './Sketch2Design';
-import Footer from './Footer';
+
 
 export default function Products() {
     return (

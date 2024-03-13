@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from '../components/Header/Header'
-import Footer from './Footer'
 import iconImg from '../assets/images/icon.png'
 import { Link } from 'react-router-dom'
 
@@ -55,7 +54,7 @@ export default function ContactForm() {
                             </div>
                         </div>
                         <div className='generate-btn'>
-                            <span className='icon-img'><img src={iconImg} /></span>
+                            <span className='icon-img'><img src={iconImg} alt="" /></span>
                             <Link className='btn' to=''>Submit</Link>
                         </div>
                     </form>

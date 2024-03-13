@@ -12,7 +12,6 @@ export default function Image2Design() {
         <>
             <div className='container my-4 py-2'>
                 <div className='row'>
-                    {/* <h2 className='product-page-title'>Image2Designs</h2> */}
                     <div className='col-md-5 products-input-field'>
                         <form>
                             <div className='form-row'>
@@ -36,7 +35,7 @@ export default function Image2Design() {
                                 <button type='submit' className='btn form-control'><strong>Very</strong> (Subtle)</button>
                             </div>
                             <div className='generate-btn'>
-                                <span className='icon-img'><img src={iconImg} /></span>
+                                <span className='icon-img'><img src={iconImg}  alt=""/></span>
                                 <Link to='/products/order' className='btn'>Generate</Link>
                             </div>
                         </form>

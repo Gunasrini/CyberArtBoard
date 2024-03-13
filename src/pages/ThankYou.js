@@ -43,13 +43,13 @@ export default function ThankYou() {
                     <div className='billing-details-row'>
                         <div className='bill-column single'>
                             <h6>Design Image:</h6>
-                            <a className='view-detail-link'>View Detail</a>
+                            <Link className='view-detail-link'>View Detail</Link>
                         </div>
                     </div>
                     <div className='billing-details-row'>
                         <div className='bill-column single'>
                             <h6>Attachment:</h6>
-                            <a className='view-detail-link'>View Detail</a>
+                            <Link className='view-detail-link'>View Detail</Link>
                         </div>
                     </div>
                     <div className='billing-details-row'>
@@ -81,12 +81,9 @@ export default function ThankYou() {
                         </label>
                     </div>
                     <div className='generate-btn'>
-                        <span className='icon-img'><img src={iconImg} /></span>
+                        <span className='icon-img'><img src={iconImg}  alt=""/></span>
                         <Link className='btn' to="/">Submit</Link>
                     </div>
-                    {/* <div className='return-home'>
-                        <p>Return to <Link to='/' className='highlighted-text'>Home</Link> more shopping</p>
-                    </div> */}
                 </div>
             </div>
         </>

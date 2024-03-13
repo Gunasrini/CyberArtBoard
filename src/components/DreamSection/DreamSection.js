@@ -1,9 +1,5 @@
 import React from 'react'
 import '../DreamSection/DreamSection.css';
-import text2design from '../../assets/images/text2design.PNG';
-import image2design from '../../assets/images/image2design.jpeg';
-import sketch2design from '../../assets/images/sketch2design.PNG';
-import { Link } from 'react-router-dom';
 import DreamsComeTrueSlider from '../../DreamsComeTrueSlider';
 
 export default function DreamSection() {

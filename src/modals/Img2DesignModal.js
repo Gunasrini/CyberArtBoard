@@ -1,9 +1,16 @@
 import React from 'react'
 import generateImg from '../assets/images/generateImg1.png';
 import iconImg from '../assets/images/icon.png';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Img2DesignModal() {
+
+    const navigate = useNavigate();
+
+    const redirectToOrderPage = (e) => {
+        e.preventDefault();
+        navigate('/products/order');
+    }
     return (
         <>
             <div className="modal modal-md" id="img2DesignModal">
@@ -30,8 +37,8 @@ export default function Img2DesignModal() {
                             </div>
                         </div>
                         <div className='generate-btn'>
-                            <span className='icon-img'><img src={iconImg} /></span>
-                            <Link className='btn' data-bs-dismiss="modal">Order</Link>
+                            <span className='icon-img'><img src={iconImg} alt=''/></span>
+                            <button className='btn' data-bs-dismiss="modal" onClick={redirectToOrderPage}>Order</button>
                         </div>
                     </div>
                 </div>

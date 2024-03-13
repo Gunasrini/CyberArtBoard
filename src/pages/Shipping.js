@@ -64,7 +64,7 @@ export default function Shipping() {
                     </label>
                 </div> */}
                 <div className='generate-btn'>
-                    <span className='icon-img'><img src={iconImg} /></span>
+                    <span className='icon-img'><img src={iconImg}  alt=""/></span>
                     <Link className='btn' to='/products/thankyou'>Submit</Link>
                 </div>
             </div>

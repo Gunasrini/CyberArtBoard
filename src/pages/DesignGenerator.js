@@ -2,7 +2,6 @@ import React from 'react'
 import iconImg from '../assets/images/icon.png';
 import Header from '../components/Header/Header';
 import GenerateImgSection from './GenerateImgSection';
-import Footer from './Footer';
 import { Link } from 'react-router-dom';
 
 export default function DesignGenerator() {
@@ -49,7 +48,7 @@ export default function DesignGenerator() {
                                 <p>Library:</p>
                             </div>
                             <div className='generate-btn'>
-                                <span className='icon-img'><img src={iconImg} /></span>
+                                <span className='icon-img'><img src={iconImg}  alt=""/></span>
                                 <Link to='/products/order' className='btn'>Generate</Link>
                             </div>
                         </form>

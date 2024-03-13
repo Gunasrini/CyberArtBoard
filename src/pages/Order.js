@@ -1,7 +1,7 @@
 import React from 'react'
 import generateImg1 from '../assets/images/generateImg1.png';
 import Header from '../components/Header/Header';
-import Footer from './Footer';
+
 import Shipping from './Shipping';
 
 export default function Order() {
@@ -55,10 +55,6 @@ export default function Order() {
                                     <span className="checkmark"></span>
                                 </label>
                             </div>
-                            {/* <div className='generate-btn'>
-                                <span className='icon-img'><img src={iconImg} /></span>
-                                <button className='btn'>Generate</button>
-                            </div> */}
                         </form>
                     </div>
                     <div className='col-md-7 products-description'>
