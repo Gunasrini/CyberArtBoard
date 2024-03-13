@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/CyberArtBoard/static/css/main.15dfee58.css",
-    "main.js": "/CyberArtBoard/static/js/main.c3c8dba6.js",
+    "main.css": "/CyberArtBoard/static/css/main.15082d6e.css",
+    "main.js": "/CyberArtBoard/static/js/main.c71883e9.js",
     "static/js/592.174a5230.chunk.js": "/CyberArtBoard/static/js/592.174a5230.chunk.js",
     "static/media/about-banner.png": "/CyberArtBoard/static/media/about-banner.74f196e832b21d252185.png",
     "static/media/aboutImg5.png": "/CyberArtBoard/static/media/aboutImg5.615533165934614e3cb5.png",
     "static/media/aboutImg3.png": "/CyberArtBoard/static/media/aboutImg3.0ff2b3107906478e04b3.png",
     "static/media/aboutImg4.png": "/CyberArtBoard/static/media/aboutImg4.ceaaa6b761b38406b57f.png",
     "static/media/aboutImg2.png": "/CyberArtBoard/static/media/aboutImg2.bbe132ca7a08a79e5d5d.png",
+    "static/media/banner-video.mp4": "/CyberArtBoard/static/media/banner-video.133946c27f7897ecd29d.mp4",
     "static/media/aboutImg1.png": "/CyberArtBoard/static/media/aboutImg1.8415ea4e898c7e87030b.png",
     "static/media/sketch2Designs.png": "/CyberArtBoard/static/media/sketch2Designs.52b3671a404244bc5b19.png",
     "static/media/image2designs.png": "/CyberArtBoard/static/media/image2designs.1b49e468bba9de3c6c3c.png",
@@ -29,26 +30,22 @@
     "static/media/img3.png": "/CyberArtBoard/static/media/img3.1d63e12ceee028dc20d9.png",
     "static/media/generateImg3.png": "/CyberArtBoard/static/media/generateImg3.64f97ab0a7583aebd9f5.png",
     "static/media/img6.png": "/CyberArtBoard/static/media/img6.3b4da770649c24601ed2.png",
-    "static/media/image2design.jpeg": "/CyberArtBoard/static/media/image2design.f09f98d1fa82c7f5fc80.jpeg",
-    "static/media/sketch2design.PNG": "/CyberArtBoard/static/media/sketch2design.a1de10421019bb9474ed.PNG",
     "static/media/tracksuits.png": "/CyberArtBoard/static/media/tracksuits.42a3197472fee0d71c72.png",
     "static/media/hoodie top.png": "/CyberArtBoard/static/media/hoodie top.2c787be81a0a295693b0.png",
     "static/media/T-shirt.png": "/CyberArtBoard/static/media/T-shirt.e558d2f6f99eb04ab3d6.png",
     "static/media/shorts.png": "/CyberArtBoard/static/media/shorts.b70875ec96f1e41791b8.png",
     "static/media/Poloshirt.png": "/CyberArtBoard/static/media/Poloshirt.c5056a8cb2cb5fdf0b62.png",
     "static/media/softshell_jacket.png": "/CyberArtBoard/static/media/softshell_jacket.4e5e1c45dc9b50966e5e.png",
-    "static/media/text2design.PNG": "/CyberArtBoard/static/media/text2design.c199f4598d8d1d0e770c.PNG",
     "static/media/Singlets.png": "/CyberArtBoard/static/media/Singlets.1f1fe60b3c67cb643077.png",
     "static/media/logo.PNG": "/CyberArtBoard/static/media/logo.5c7b4d831bf285cff8aa.PNG",
     "static/media/icon.png": "/CyberArtBoard/static/media/icon.ba47b2e6ea41a7f68ea5.png",
-    "static/media/user.png": "/CyberArtBoard/static/media/user.084f6503c712392641e8.png",
     "index.html": "/CyberArtBoard/index.html",
-    "main.15dfee58.css.map": "/CyberArtBoard/static/css/main.15dfee58.css.map",
-    "main.c3c8dba6.js.map": "/CyberArtBoard/static/js/main.c3c8dba6.js.map",
+    "main.15082d6e.css.map": "/CyberArtBoard/static/css/main.15082d6e.css.map",
+    "main.c71883e9.js.map": "/CyberArtBoard/static/js/main.c71883e9.js.map",
     "592.174a5230.chunk.js.map": "/CyberArtBoard/static/js/592.174a5230.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15dfee58.css",
-    "static/js/main.c3c8dba6.js"
+    "static/css/main.15082d6e.css",
+    "static/js/main.c71883e9.js"
   ]
 }
