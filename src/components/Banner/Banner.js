@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 export default function Banner() {
     return (
         <>
-            <video autoPlay loop id="home-banner-video">
+            <video loop autoPlay muted id="home-banner-video">
                 <source src={bannerVideo} type="video/mp4" />
             </video>
             <div className='banner-section d-none'>
