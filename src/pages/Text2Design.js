@@ -27,13 +27,13 @@ export default function Text2Design() {
                                 <textarea className='form-control prompt' placeholder="Negative Prompt:"></textarea>
                             </div>
                             <div className='generate-btn'>
-                                <span className='icon-img'><img src={iconImg}  alt=""/></span>
+                                <span className='icon-img'><img src={iconImg} alt="" /></span>
                                 <Link to='/products/order' title='Generate' className='btn'>Generate</Link>
                             </div>
                         </form>
                     </div>
                     <div className='col-md-7 products-description'>
-                        <GenerateImgSection />
+                        {/* <GenerateImgSection /> */}
                         <div className='radio-btn-row'>
                             {/* <label className="radio-wrap">
                                 <input type="radio" name="radio" />
@@ -51,9 +51,9 @@ export default function Text2Design() {
                                 <input type="radio" name="radio" />
                                 <span className="checkmark">U4</span>
                             </label> */}
-                            <div className='reset-icon'>
+                            {/* <div className='reset-icon'>
                                 <i className="fa-solid fa-arrows-rotate"></i>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
