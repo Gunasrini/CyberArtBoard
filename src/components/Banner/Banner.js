@@ -16,7 +16,7 @@ export default function Banner() {
             <video loop autoPlay muted id="home-banner-video">
                 <source src={bannerVideo} type="video/mp4" />
             </video>
-            <div className='banner-section d-none'>
+            <div className='banner-section'>
                 <div className='container'>
 
 
