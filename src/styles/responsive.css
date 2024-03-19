@@ -1,10 +1,9 @@
 @media screen and (min-width: 320px) and (max-width:414px) {
-
     .my-5 {
         margin-top: 1.5rem !important;
         margin-bottom: 1.5rem !important;
     }
-    
+
     .design-templates-sec .list a {
         text-decoration: none;
     }
@@ -17,24 +16,24 @@
     .site-logo {
         width: 60px;
     }
-    
+
     .header-buttons i {
         font-size: 20px;
     }
-    
+
     #home-banner-video {
         height: auto;
     }
-    
+
     .banner-sub-cont .badge {
         width: 30px;
         height: 30px;
     }
-    
+
     .left-radio-check .item {
         margin: 0 0 15px;
     }
-    
+
 
     .left-radio-check .item {
         padding: 5px 10px;
@@ -70,11 +69,11 @@
     .billboard-section .list-item {
         padding: 0 10px 10px;
     }
-    
+
     .billboard-section .row>.list-item:first-child {
         padding-left: 10px;
     }
-    
+
     .billboard-section .list-item img {
         height: auto;
     }
@@ -82,35 +81,39 @@
     .products-wrapper {
         padding: 20px 0 0;
     }
-    
+
     .product-category .nav-link {
         font-size: 13px;
         padding: 6px 10px;
     }
-    
+
     .product-category .nav-item {
         margin-right: 10px;
     }
-    
+
     .product-category {
         margin-bottom: 0;
     }
-    
-    .generate-btn .btn {font-size: 18px;padding-top: 3px;padding-bottom: 3px;}
-    
+
+    .generate-btn .btn {
+        font-size: 18px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
     .generate-btn .icon-img img {
         width: 40px;
     }
-    
+
     .generate-btn {
         width: 170px;
     }
-    
+
     .products-below-content p {
         font-size: 16px;
         line-height: 25px;
     }
-    
+
     .products-below-content {
         margin-top: 0;
     }
@@ -118,7 +121,7 @@
     .description-row .gridItem {
         height: auto;
     }
-    
+
     .products-description {
         margin: 20px 0 15px;
     }
@@ -126,15 +129,15 @@
     .sketch-section img {
         height: auto;
     }
-    
+
     .sketch-section {
         height: auto;
     }
-    
+
     .shipping-section {
         margin-top: 2em;
     }
-    
+
     .order-page-wrap .leftside-form {
         width: 100%;
     }
@@ -143,46 +146,47 @@
         width: 100%;
         padding: 20px;
     }
-    
+
     .thankyou-section .header {
         flex-direction: column;
     }
-    
+
     .thankyou-section h3 {
         font-size: 18px;
         text-align: center;
         line-height: 26px;
         margin: 10px 0 0;
     }
-    
+
     .customer-desc {
         padding: 0;
     }
-    
+
     .bill-column {
         width: 100%;
     }
-    
+
     .billing-details-row {
         flex-direction: column;
     }
-    
+
     .bill-column:last-child {
         padding-left: 0;
     }
-    
+
     ul.order-list {
         flex-wrap: wrap;
     }
+
     .banner-text {
         font-size: 20px;
         padding: 20px;
     }
-    
+
     .about-banner img {
         height: auto;
     }
-    
+
     .about-cont-sec .left-content,
     .about-cont-sec .right-img,
     .about-cont-sec .alternate .left-content,
@@ -191,31 +195,203 @@
     .collaboration-section .right-content {
         width: 100%;
     }
-    
-    .about-cont-sec .list-item, .collaboration-section .list-item {
+
+    .about-cont-sec .list-item,
+    .collaboration-section .list-item {
         flex-direction: column;
         margin: 20px 0;
     }
-    
-    .left-content h3, .right-content h3 {
+
+    .left-content h3,
+    .right-content h3 {
         font-size: 22px;
         margin-bottom: 5px;
     }
-    
-    .left-content p, .left-content li, .right-content p {
+
+    .left-content p,
+    .left-content li,
+    .right-content p {
         font-size: 14px;
         margin-bottom: 0.5rem;
     }
-    
-    .right-img img, .left-img img {
+
+    .right-img img,
+    .left-img img {
         height: auto;
     }
-    
+
     .collaboration-section .list-item {
         padding: 20px 0;
     }
 
     h2.product-page-title {
         font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width:767px) {
+    .my-5 {
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .site-logo {
+        width: 28%;
+    }
+
+    #home-banner-video {
+        height: auto;
+    }
+
+    .banner-section h2.wrapped-text {
+        font-size: 2rem;
+        line-height: 1.4em;
+        margin-bottom: 1.5em;
+        max-width: 100%;
+    }
+
+    .left-radio-check .item {
+        margin: 0 0 15px;
+        padding: 10px 12px;
+    }
+
+    .left-radio-check .item h3 {
+        font-size: 18px;
+    }
+
+    .banner-sub-cont .badge {
+        width: 35px;
+        height: 35px;
+    }
+
+    .dreams-section {
+        margin-top: 15px;
+        padding: 0 20px;
+    }
+
+    .dreams-true-slider {
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    .dreams-true-slider .slider-sec {
+        width: 50%;
+        padding: 0;
+    }
+
+    .dreams-true-slider .slider-sec h3 {
+        font-size: 16px;
+        left: 8%;
+    }
+
+    .dreams-section h3 {
+        padding-bottom: 5px;
+    }
+
+    .dreams-section.billboard-section .list-item {
+        width: 50%;
+        padding: 0;
+    }
+
+    .products-below-content p {
+        font-size: 18px;
+    }
+
+    .products-description {
+        margin-top: 20px;
+    }
+
+    .generate-btn .btn {
+        font-size: 18px;
+    }
+
+    .generate-btn .icon-img img {
+        width: 50px;
+    }
+
+    .sketch-section {
+        height: auto;
+    }
+
+    .order-page-wrap .leftside-form {
+        width: 100%;
+    }
+
+
+    .thankyou-section {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .thankyou-section .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .thankyou-section h3 {
+        margin: 15px 0 0;
+        font-size: 20px;
+    }
+
+    h2.product-page-title {
+        font-size: 25px;
+    }
+
+    .about-banner img {
+        height: auto;
+    }
+
+    .banner-text {
+        font-size: 25px;
+        padding-bottom: 30px;
+    }
+
+    .about-cont-sec .list-item,
+    .collaboration-section .list-item {
+        margin: 30px 0;
+    }
+
+    .right-img img,
+    .left-img img {
+        height: auto;
+    }
+
+    .left-content p,
+    .left-content li,
+    .right-content p {
+        font-size: 16px;
+    }
+
+    .left-content h3,
+    .right-content h3 {
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+
+    .collaboration-section .list-item {
+        padding: 30px 0;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .site-logo {
+        width: 30%;
+    }
+
+    .banner-section h2.wrapped-text {
+        max-width: 100%;
+        font-size: 45px;
+    }
+
+    #home-banner-video {
+        height: 450px;
+    }
+
+    .dreams-true-slider .slider-sec h3 {
+        font-size: 15px;
+        left: 23%;
+        top: 10px;
+        text-align: center;
     }
 }
