@@ -1,4 +1,10 @@
 @media screen and (min-width: 320px) and (max-width:414px) {
+
+    .my-5 {
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
     .design-templates-sec .list a {
         text-decoration: none;
     }
@@ -8,9 +14,27 @@
         max-width: 100%;
     }
 
-    .banner-section {
-        padding: 30px 15px;
+    .site-logo {
+        width: 60px;
     }
+    
+    .header-buttons i {
+        font-size: 20px;
+    }
+    
+    #home-banner-video {
+        height: auto;
+    }
+    
+    .banner-sub-cont .badge {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .left-radio-check .item {
+        margin: 0 0 15px;
+    }
+    
 
     .left-radio-check .item {
         padding: 5px 10px;
@@ -20,6 +44,10 @@
         font-size: 15px;
     }
 
+    .header-buttons a.dropdown-item {
+        font-size: 14px;
+    }
+
     .dreams-true-slider .slider-sec {
         width: 100%;
         height: auto;
@@ -27,6 +55,7 @@
 
     .dreams-true-slider {
         flex-direction: column;
+        margin: 0;
     }
 
     .dreams-section {
@@ -36,5 +65,157 @@
     .dreams-section h3 {
         font-size: 15px;
         padding: 0 10px;
+    }
+
+    .billboard-section .list-item {
+        padding: 0 10px 10px;
+    }
+    
+    .billboard-section .row>.list-item:first-child {
+        padding-left: 10px;
+    }
+    
+    .billboard-section .list-item img {
+        height: auto;
+    }
+
+    .products-wrapper {
+        padding: 20px 0 0;
+    }
+    
+    .product-category .nav-link {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+    
+    .product-category .nav-item {
+        margin-right: 10px;
+    }
+    
+    .product-category {
+        margin-bottom: 0;
+    }
+    
+    .generate-btn .btn {font-size: 18px;padding-top: 3px;padding-bottom: 3px;}
+    
+    .generate-btn .icon-img img {
+        width: 40px;
+    }
+    
+    .generate-btn {
+        width: 170px;
+    }
+    
+    .products-below-content p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+    .products-below-content {
+        margin-top: 0;
+    }
+
+    .description-row .gridItem {
+        height: auto;
+    }
+    
+    .products-description {
+        margin: 20px 0 15px;
+    }
+
+    .sketch-section img {
+        height: auto;
+    }
+    
+    .sketch-section {
+        height: auto;
+    }
+    
+    .shipping-section {
+        margin-top: 2em;
+    }
+    
+    .order-page-wrap .leftside-form {
+        width: 100%;
+    }
+
+    .thankyou-section {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .thankyou-section .header {
+        flex-direction: column;
+    }
+    
+    .thankyou-section h3 {
+        font-size: 18px;
+        text-align: center;
+        line-height: 26px;
+        margin: 10px 0 0;
+    }
+    
+    .customer-desc {
+        padding: 0;
+    }
+    
+    .bill-column {
+        width: 100%;
+    }
+    
+    .billing-details-row {
+        flex-direction: column;
+    }
+    
+    .bill-column:last-child {
+        padding-left: 0;
+    }
+    
+    ul.order-list {
+        flex-wrap: wrap;
+    }
+    .banner-text {
+        font-size: 20px;
+        padding: 20px;
+    }
+    
+    .about-banner img {
+        height: auto;
+    }
+    
+    .about-cont-sec .left-content,
+    .about-cont-sec .right-img,
+    .about-cont-sec .alternate .left-content,
+    .about-cont-sec .alternate .right-img,
+    .collaboration-section .left-img,
+    .collaboration-section .right-content {
+        width: 100%;
+    }
+    
+    .about-cont-sec .list-item, .collaboration-section .list-item {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    
+    .left-content h3, .right-content h3 {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    
+    .left-content p, .left-content li, .right-content p {
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .right-img img, .left-img img {
+        height: auto;
+    }
+    
+    .collaboration-section .list-item {
+        padding: 20px 0;
+    }
+
+    h2.product-page-title {
+        font-size: 22px;
     }
 }

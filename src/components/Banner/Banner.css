@@ -1,6 +1,10 @@
 .banner-section {
+    position: relative;
+}
+
+.banner-main-content {
     position: absolute;
-    top: 21%;
+    top: 5%;
     left: 0;
     right: 0;
 }
@@ -86,6 +90,6 @@
 
 #home-banner-video {
     width: 100%;
-    height: 90vh;
+    height: 600px;
     object-fit: cover;
 }

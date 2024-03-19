@@ -1,6 +1,5 @@
 import React from 'react'
 import iconImg from '../assets/images/icon.png';
-import GenerateImgSection from './GenerateImgSection';
 import { Link } from 'react-router-dom';
 
 export default function Text2Design() {
