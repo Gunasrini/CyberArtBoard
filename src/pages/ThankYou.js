@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import iconImg from '../assets/images/icon.png'
-import logo from '../assets/images/logo.PNG';
+import logo from '../assets/images/logo.png';
 
 export default function ThankYou() {
     return (
@@ -81,7 +81,7 @@ export default function ThankYou() {
                         </label>
                     </div>
                     <div className='generate-btn'>
-                        <span className='icon-img'><img src={iconImg}  alt=""/></span>
+                        <span className='icon-img'><img src={iconImg} alt="" /></span>
                         <Link className='btn' to="/">Submit</Link>
                     </div>
                 </div>

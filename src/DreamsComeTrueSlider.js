@@ -16,26 +16,26 @@ export default function DreamsComeTrueSlider() {
         <div className='dreams-true-slider'>
             <div className='slider-sec'>
                 <Link to="/sustainable-custom-apparel">
-                    <h3>Sustainable Custom Apparel</h3>
                     <img src={sustainCustomApparel} title='Sustainable Custom Apparel' alt='' />
+                    <h3>Sustainable Custom Apparel</h3>
                 </Link>
             </div>
             <div className='slider-sec'>
                 <Link to="/products/text2design">
-                    <h3>Text 2 Designs</h3>
                     <img src={text2design} title='Text 2 Designs' alt='' />
+                    <h3>Text 2 Designs</h3>
                 </Link>
             </div>
             <div className='slider-sec'>
                 <Link to="/products/image2design">
-                    <h3>Image 2 Designs</h3>
                     <img src={image2design} title='Image 2 Designs' alt='' />
+                    <h3>Image 2 Designs</h3>
                 </Link>
             </div>
             <div className='slider-sec'>
                 <Link to="/products/sketch2design">
-                    <h3>Sketch 2 Designs</h3>
                     <img src={sketch2design} title='Sketch 2 Designs' alt='' />
+                    <h3>Sketch 2 Designs</h3>
                 </Link>
             </div>
         </div>

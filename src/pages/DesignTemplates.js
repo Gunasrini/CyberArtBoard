@@ -19,25 +19,25 @@ export default function DesignTemplates() {
                         <h4>Essentials:</h4>
                         <div className='col-md-8 d-flex'>
                             <div className='col-md-3 list'>
-                                <a title='Polo Shirts' href='https://www.cyberartboard.com/polo-shirts-dye-sublimation/' target='_new'>
+                                <a title='Polo Shirts' href='https://www.cyberartboard.com/polo-shirts-dye-sublimation/'>
                                     <img src={poloShirts} alt='' />
                                     <h6>Polo Shirts</h6>
                                 </a>
                             </div>
                             <div className='col-md-3 list'>
-                                <a title='T Shirts' href='https://www.cyberartboard.com/t-shirts/' target='_new'>
+                                <a title='T Shirts' href='https://www.cyberartboard.com/t-shirts/'>
                                     <img src={tShirts} alt='' />
                                     <h6>T Shirts</h6>
                                 </a>
                             </div>
                             <div className='col-md-3 list'>
-                                <a title='Singlets' href='https://www.cyberartboard.com/singlets/' target='_new'>
+                                <a title='Singlets' href='https://www.cyberartboard.com/singlets/'>
                                     <img src={singlets} alt='' />
                                     <h6>Singlets</h6>
                                 </a>
                             </div>
                             <div className='col-md-3 list'>
-                                <a title='Shorts' href='https://www.cyberartboard.com/shorts/' target='_new'>
+                                <a title='Shorts' href='https://www.cyberartboard.com/shorts/'>
                                     <img src={shorts} alt='' />
                                     <h6>Shorts</h6>
                                 </a>
@@ -45,19 +45,19 @@ export default function DesignTemplates() {
                         </div>
                         <div className='col-md-8 d-flex mt-2'>
                             <div className='col-md-3 list'>
-                                <a title='Hoodie tops' href='https://www.cyberartboard.com/hoodie-top/' target='_new'>
+                                <a title='Hoodie tops' href='https://www.cyberartboard.com/hoodie-top/'>
                                     <img src={hoodieTops} alt='' />
                                     <h6>Hoodie tops</h6>
                                 </a>
                             </div>
                             <div className='col-md-3 list'>
-                                <a title='Tracksuits' href='https://www.cyberartboard.com/tracksuits/' target='_new'>
+                                <a title='Tracksuits' href='https://www.cyberartboard.com/tracksuits/'>
                                     <img src={trackSuits} alt='' />
                                     <h6>Tracksuits</h6>
                                 </a>
                             </div>
                             <div className='col-md-3 list'>
-                                <a title='Softshell Jackets' href='https://www.cyberartboard.com/softshell-jackets/' target='_new'>
+                                <a title='Softshell Jackets' href='https://www.cyberartboard.com/softshell-jackets/'>
                                     <img src={softShellJacket} alt='' />
                                     <h6>Softshell Jackets</h6>
                                 </a>

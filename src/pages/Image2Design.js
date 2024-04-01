@@ -6,6 +6,7 @@ import generateImg3 from '../assets/images/generateImg3.png';
 import generateImg4 from '../assets/images/generateImg4.png';
 import Img2DesignModal from '../modals/Img2DesignModal';
 import { Link } from 'react-router-dom';
+import GenerateImgSection from './GenerateImgSection';
 
 export default function Image2Design() {
     return (
@@ -41,22 +42,7 @@ export default function Image2Design() {
                         </form>
                     </div>
                     <div className='col-md-7 products-description'>
-                        <div className='description-row'>
-                            <div className='image-grid'>
-                                <div className='gridItem'>
-                                    <img src={generateImg1} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
-                                </div>
-                                <div className='gridItem'>
-                                    <img src={generateImg2} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
-                                </div>
-                                <div className='gridItem'>
-                                    <img src={generateImg3} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
-                                </div>
-                                <div className='gridItem'>
-                                    <img src={generateImg4} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
-                                </div>
-                            </div>
-                        </div>
+                        <GenerateImgSection />
                     </div>
                 </div>
                 <div className='products-below-content'>

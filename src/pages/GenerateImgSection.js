@@ -11,16 +11,16 @@ export default function GenerateImgSection() {
             <div className='description-row'>
                 <div className='image-grid'>
                     <div className='gridItem'>
-                        <img src={generateImg1} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
+                        {/* <img src={generateImg1} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" /> */}
                     </div>
                     <div className='gridItem'>
-                        <img src={generateImg2} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
+                        {/* <img src={generateImg2} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" /> */}
                     </div>
                     <div className='gridItem'>
-                        <img src={generateImg3} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
+                        {/* <img src={generateImg3} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" /> */}
                     </div>
                     <div className='gridItem'>
-                        <img src={generateImg4} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
+                        {/* <img src={generateImg4} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" /> */}
                     </div>
                 </div>
             </div>

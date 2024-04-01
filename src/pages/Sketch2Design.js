@@ -6,6 +6,7 @@ import generateImg3 from '../assets/images/generateImg3.png';
 import generateImg4 from '../assets/images/generateImg4.png';
 import Img2DesignModal from '../modals/Img2DesignModal';
 import { Link } from 'react-router-dom';
+import GenerateImgSection from './GenerateImgSection';
 
 export default function Sketch2Design() {
     return (
@@ -37,28 +38,13 @@ export default function Sketch2Design() {
                                 <button type='submit' className='btn form-control'><strong>Very</strong> (Subtle)</button>
                             </div>
                             <div className='generate-btn'>
-                                <span className='icon-img'><img src={iconImg}  alt=""/></span>
+                                <span className='icon-img'><img src={iconImg} alt="" /></span>
                                 <Link to='/products/order' className='btn'>Generate</Link>
                             </div>
                         </form>
                     </div>
                     <div className='col-md-7 products-description'>
-                        <div className='description-row'>
-                            <div className='image-grid'>
-                                <div className='gridItem'>
-                                    <img src={generateImg1} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
-                                </div>
-                                <div className='gridItem'>
-                                    <img src={generateImg2} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
-                                </div>
-                                <div className='gridItem'>
-                                    <img src={generateImg3} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
-                                </div>
-                                <div className='gridItem'>
-                                    <img src={generateImg4} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
-                                </div>
-                            </div>
-                        </div>
+                        <GenerateImgSection />
                     </div>
                 </div>
                 <div className='products-below-content'>

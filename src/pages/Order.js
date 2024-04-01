@@ -60,7 +60,47 @@ export default function Order() {
                     <div className='col-md-7 products-description'>
                         <div className='variation-options'>
                             <h3>Adult:</h3>
-                            <div className='radio-btn-row'>
+                            <div className='radio-btn-row sub-total'>
+                                <div className='btn-wrap'>
+                                    <label>S</label>
+                                    <input type='text' className='form-control' />
+                                </div>
+                                <div className='btn-wrap'>
+                                    <label>M</label>
+                                    <input type='text' className='form-control' />
+                                </div>
+                                <div className='btn-wrap'>
+                                    <label>L</label>
+                                    <input type='text' className='form-control' />
+                                </div>
+                                <div className='btn-wrap'>
+                                    <label>XL</label>
+                                    <input type='text' className='form-control' />
+                                </div>
+                                <div className='btn-wrap'>
+                                    <label>2XL</label>
+                                    <input type='text' className='form-control' />
+                                </div>
+                                <div className='btn-wrap'>
+                                    <label>3XL</label>
+                                    <input type='text' className='form-control' />
+                                </div>
+                            </div>
+                            <div className='radio-btn-row sub-total mt-3'>
+                                <div className='btn-wrap'>
+                                    <label>4XL</label>
+                                    <input type='text' className='form-control' />
+                                </div>
+                                <div className='btn-wrap'>
+                                    <label>5XL</label>
+                                    <input type='text' className='form-control' />
+                                </div>
+                                <div className='sub-total'>
+                                    <label>Sub Total</label>
+                                    <input type="text" className='form-control total' />
+                                </div>
+                            </div>
+                            {/* <div className='radio-btn-row'>
                                 <label className="radio-wrap">
                                     <input type="radio" name="radio" />
                                     <span className="checkmark">S</span>
@@ -99,38 +139,38 @@ export default function Order() {
                                     <label>Sub Total</label>
                                     <input type="text" className='form-control' />
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
-                        <div className='variation-options mt-4'>
+                        <div className='variation-options sub-total mt-4'>
                             <h3 className='mb-0'>Unisex Junior:</h3>
-                            <div className='radio-btn-row'>
-                                <label className="radio-wrap">
-                                    <input type="radio" name="radio" />
-                                    <span className="checkmark">6</span>
-                                </label>
-                                <label className="radio-wrap">
-                                    <input type="radio" name="radio" />
-                                    <span className="checkmark">8</span>
-                                </label>
-                                <label className="radio-wrap">
-                                    <input type="radio" name="radio" />
-                                    <span className="checkmark">10</span>
-                                </label>
-                                <label className="radio-wrap">
-                                    <input type="radio" name="radio" />
-                                    <span className="checkmark">12</span>
-                                </label>
-                                <label className="radio-wrap">
-                                    <input type="radio" name="radio" />
-                                    <span className="checkmark">14</span>
-                                </label>
-                                <label className="radio-wrap">
-                                    <input type="radio" name="radio" />
-                                    <span className="checkmark">16</span>
-                                </label>
+                            <div className='radio-btn-row mt-2'>
+                                <div className='btn-wrap'>
+                                    <label>6</label>
+                                    <input type='text' className='form-control' />
+                                </div>
+                                <div className='btn-wrap'>
+                                    <label>8</label>
+                                    <input type='text' className='form-control' />
+                                </div>
+                                <div className='btn-wrap'>
+                                    <label>10</label>
+                                    <input type='text' className='form-control' />
+                                </div>
+                                <div className='btn-wrap'>
+                                    <label>12</label>
+                                    <input type='text' className='form-control' />
+                                </div>
+                                <div className='btn-wrap'>
+                                    <label>14</label>
+                                    <input type='text' className='form-control' />
+                                </div>
+                                <div className='btn-wrap'>
+                                    <label>16</label>
+                                    <input type='text' className='form-control' />
+                                </div>
                                 <div className='sub-total'>
                                     <label>Sub Total</label>
-                                    <input type="text" className='form-control' />
+                                    <input type="text" className='form-control total' />
                                 </div>
                             </div>
                             {/* <div className='image-btn-wrap'>

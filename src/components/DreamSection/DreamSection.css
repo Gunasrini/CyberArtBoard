@@ -74,13 +74,15 @@
     color: #000;
     text-transform: inherit;
     padding: 0;
-    position: absolute;
-    top: 20px;
-    margin: 0;
-    left: 30px;
-    font-size: 20px;
+    margin: 8px 0 0;
+    font-size: 18px;
+    text-align: center;
 }
 
 .dreams-true-slider .slider-sec a {
     text-decoration: none;
 }
+
+/* .dreams-true-slider .slider-sec a:hover h3 {
+    color: #f26b22;
+} */

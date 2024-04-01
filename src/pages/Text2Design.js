@@ -1,6 +1,7 @@
 import React from 'react'
 import iconImg from '../assets/images/icon.png';
 import { Link } from 'react-router-dom';
+import GenerateImgSection from './GenerateImgSection';
 
 export default function Text2Design() {
     return (
@@ -32,7 +33,7 @@ export default function Text2Design() {
                         </form>
                     </div>
                     <div className='col-md-7 products-description'>
-                        {/* <GenerateImgSection /> */}
+                        <GenerateImgSection />
                         <div className='radio-btn-row'>
                             {/* <label className="radio-wrap">
                                 <input type="radio" name="radio" />
@@ -50,9 +51,9 @@ export default function Text2Design() {
                                 <input type="radio" name="radio" />
                                 <span className="checkmark">U4</span>
                             </label> */}
-                            {/* <div className='reset-icon'>
+                            <div className='reset-icon'>
                                 <i className="fa-solid fa-arrows-rotate"></i>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                 </div>

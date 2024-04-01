@@ -89,7 +89,8 @@ h2.product-page-title {
 }
 
 .description-row .gridItem {
-    height: 250px;
+    height: 220px;
+    background: #f2f2f2;
 }
 
 .description-row .gridItem img {
@@ -156,6 +157,19 @@ h2.product-page-title {
     height: 45px;
     background: #000;
     cursor: pointer;
+}
+
+.variation-options .radio-btn-row .form-control {
+    width: 60px;
+}
+
+.variation-options .radio-btn-row .form-control.total {
+    width: 120px;
+}
+
+.variation-options .btn-wrap {
+    margin-right: 10px;
+    text-align: center;
 }
 
 .reset-icon i {
@@ -285,6 +299,8 @@ h2.product-page-title {
     color: #999;
     font-weight: 600;
     margin-bottom: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .sub-total .form-control {
@@ -410,7 +426,7 @@ h2.product-page-title {
 }
 
 .shipping-section {
-    margin-top: 10em;
+    margin-top: 6.9em;
 }
 
 .shipping-section h4 {
@@ -452,6 +468,8 @@ h2.product-page-title {
     border: 1.5px solid #ccc;
     border-radius: 0;
     font-size: 14px;
+    width: 100%;
+    background-color: #fff;
 }
 
 .shipping-section select {
@@ -504,10 +522,6 @@ h2.product-page-title {
     background: #fff;
     border: 2px solid #ccc;
 }
-
-/* .gift-check:hover input~.checkmark {
-    background-color: #ccc;
-} */
 
 .gift-check input:checked~.checkmark {
     background-color: #2196F3;
