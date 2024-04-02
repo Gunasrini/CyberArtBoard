@@ -1,7 +1,8 @@
+import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../src/assets/images/logo.png';
-
-import React from 'react'
+import GoogleLoginSignup from './GoogleLoginSignup';
+import FacebookLogin from './FacebookLogin';
 
 export default function Login() {
     return (
@@ -28,6 +29,10 @@ export default function Login() {
                     <div className='login-signup-info'>
                         <Link to="/signup" className='btn highlighted-text'>Signup</Link>
                         <Link to="/forgot-password" className='btn text-primary'>Forgot Password</Link>
+                    </div>
+                    <div className='social-logins'>
+                        <GoogleLoginSignup />
+                        <FacebookLogin />
                     </div>
                 </div>
             </div>

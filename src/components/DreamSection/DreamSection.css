@@ -61,6 +61,10 @@
     width: 100%;
 }
 
+.dreams-true-slider img.customApparel {
+    padding: 4px;
+}
+
 .dreams-true-slider .slick-track>div:first-child .slider-sec {
     padding-left: 0;
 }
@@ -82,7 +86,3 @@
 .dreams-true-slider .slider-sec a {
     text-decoration: none;
 }
-
-/* .dreams-true-slider .slider-sec a:hover h3 {
-    color: #f26b22;
-} */

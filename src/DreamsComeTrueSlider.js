@@ -1,5 +1,5 @@
 import React from 'react'
-import sustainCustomApparel from '../src/assets/images/DreamsTrue/sustainable-custom-apparel.png';
+import sustainCustomApparel from '../src/assets/images/DreamsTrue/sustainable-custom-apparel.jpg';
 import text2design from '../src/assets/images/DreamsTrue/text2designs.png';
 import image2design from '../src/assets/images/DreamsTrue/image2designs.png';
 import sketch2design from '../src/assets/images/DreamsTrue/sketch2Designs.png'
@@ -16,7 +16,7 @@ export default function DreamsComeTrueSlider() {
         <div className='dreams-true-slider'>
             <div className='slider-sec'>
                 <Link to="/sustainable-custom-apparel">
-                    <img src={sustainCustomApparel} title='Sustainable Custom Apparel' alt='' />
+                    <img src={sustainCustomApparel} title='Sustainable Custom Apparel' alt='' className='customApparel' />
                     <h3>Sustainable Custom Apparel</h3>
                 </Link>
             </div>

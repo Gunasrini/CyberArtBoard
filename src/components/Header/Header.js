@@ -13,7 +13,7 @@ export default function Header() {
               <img src={logo} alt="Cyber ArtBoard" className="site-logo" />
             </Link>
             <div className="header-buttons">
-              <Link className="icons" title="Profile">
+              <Link to='login' className="icons" title="Profile">
                 <i className="far fa-user"></i>
               </Link>
               <li className="nav-item dropdown">
