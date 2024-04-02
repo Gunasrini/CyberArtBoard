@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CyberArtBoard/static/css/main.8f7125a2.css",
-    "main.js": "/CyberArtBoard/static/js/main.7dcf9afa.js",
+    "main.css": "/CyberArtBoard/static/css/main.34304260.css",
+    "main.js": "/CyberArtBoard/static/js/main.545d7e2f.js",
     "static/js/592.174a5230.chunk.js": "/CyberArtBoard/static/js/592.174a5230.chunk.js",
     "static/media/about-banner.png": "/CyberArtBoard/static/media/about-banner.74f196e832b21d252185.png",
     "static/media/aboutImg5.png": "/CyberArtBoard/static/media/aboutImg5.615533165934614e3cb5.png",
@@ -13,7 +13,6 @@
     "static/media/sketch2Designs.png": "/CyberArtBoard/static/media/sketch2Designs.52b3671a404244bc5b19.png",
     "static/media/image2designs.png": "/CyberArtBoard/static/media/image2designs.1b49e468bba9de3c6c3c.png",
     "static/media/text2designs.png": "/CyberArtBoard/static/media/text2designs.d47e27e104b84f4807c4.png",
-    "static/media/sustainable-custom-apparel.png": "/CyberArtBoard/static/media/sustainable-custom-apparel.defc8042a43bf04bb242.png",
     "static/media/img8.png": "/CyberArtBoard/static/media/img8.6f8e14f2900cc2159af0.png",
     "static/media/generateImg4.png": "/CyberArtBoard/static/media/generateImg4.ca2b0877eec5a5fb9a78.png",
     "static/media/img7.png": "/CyberArtBoard/static/media/img7.338dce276fe62578a6a6.png",
@@ -38,14 +37,15 @@
     "static/media/Poloshirt.png": "/CyberArtBoard/static/media/Poloshirt.c5056a8cb2cb5fdf0b62.png",
     "static/media/softshell_jacket.png": "/CyberArtBoard/static/media/softshell_jacket.4e5e1c45dc9b50966e5e.png",
     "static/media/Singlets.png": "/CyberArtBoard/static/media/Singlets.1f1fe60b3c67cb643077.png",
+    "static/media/sustainable-custom-apparel.jpg": "/CyberArtBoard/static/media/sustainable-custom-apparel.c07ab12461d28fac3d25.jpg",
     "static/media/icon.png": "/CyberArtBoard/static/media/icon.ba47b2e6ea41a7f68ea5.png",
     "index.html": "/CyberArtBoard/index.html",
-    "main.8f7125a2.css.map": "/CyberArtBoard/static/css/main.8f7125a2.css.map",
-    "main.7dcf9afa.js.map": "/CyberArtBoard/static/js/main.7dcf9afa.js.map",
+    "main.34304260.css.map": "/CyberArtBoard/static/css/main.34304260.css.map",
+    "main.545d7e2f.js.map": "/CyberArtBoard/static/js/main.545d7e2f.js.map",
     "592.174a5230.chunk.js.map": "/CyberArtBoard/static/js/592.174a5230.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f7125a2.css",
-    "static/js/main.7dcf9afa.js"
+    "static/css/main.34304260.css",
+    "static/js/main.545d7e2f.js"
   ]
 }
