@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CyberArtBoard/static/css/main.bd134cd1.css",
-    "main.js": "/CyberArtBoard/static/js/main.14f056db.js",
+    "main.css": "/CyberArtBoard/static/css/main.4b3d22cb.css",
+    "main.js": "/CyberArtBoard/static/js/main.8b305f8a.js",
     "static/js/592.174a5230.chunk.js": "/CyberArtBoard/static/js/592.174a5230.chunk.js",
     "static/media/about-banner.png": "/CyberArtBoard/static/media/about-banner.74f196e832b21d252185.png",
     "static/media/aboutImg5.png": "/CyberArtBoard/static/media/aboutImg5.615533165934614e3cb5.png",
@@ -37,15 +37,15 @@
     "static/media/Poloshirt.png": "/CyberArtBoard/static/media/Poloshirt.c5056a8cb2cb5fdf0b62.png",
     "static/media/softshell_jacket.png": "/CyberArtBoard/static/media/softshell_jacket.4e5e1c45dc9b50966e5e.png",
     "static/media/Singlets.png": "/CyberArtBoard/static/media/Singlets.1f1fe60b3c67cb643077.png",
-    "static/media/sustainable-custom-apparel.jpg": "/CyberArtBoard/static/media/sustainable-custom-apparel.c07ab12461d28fac3d25.jpg",
+    "static/media/sustainable-custom-apparel.jpg": "/CyberArtBoard/static/media/sustainable-custom-apparel.9a432175bbbbccd65c3d.jpg",
     "static/media/icon.png": "/CyberArtBoard/static/media/icon.ba47b2e6ea41a7f68ea5.png",
     "index.html": "/CyberArtBoard/index.html",
-    "main.bd134cd1.css.map": "/CyberArtBoard/static/css/main.bd134cd1.css.map",
-    "main.14f056db.js.map": "/CyberArtBoard/static/js/main.14f056db.js.map",
+    "main.4b3d22cb.css.map": "/CyberArtBoard/static/css/main.4b3d22cb.css.map",
+    "main.8b305f8a.js.map": "/CyberArtBoard/static/js/main.8b305f8a.js.map",
     "592.174a5230.chunk.js.map": "/CyberArtBoard/static/js/592.174a5230.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd134cd1.css",
-    "static/js/main.14f056db.js"
+    "static/css/main.4b3d22cb.css",
+    "static/js/main.8b305f8a.js"
   ]
 }
