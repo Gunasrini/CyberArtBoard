@@ -24,7 +24,7 @@ export default function SignUp() {
                     </div>
                     <div className='mb-4'>
                         <label>Password</label>
-                        <input type='text' className='form-control' />
+                        <input type='password' className='form-control' />
                     </div>
                     <div className='text-center'>
                         <Link to="/login" className='btn btn-primary login-width'>Create</Link>

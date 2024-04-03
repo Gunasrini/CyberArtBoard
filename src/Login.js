@@ -21,7 +21,7 @@ export default function Login() {
                     </div>
                     <div className='mb-4'>
                         <label>Password</label>
-                        <input type='text' className='form-control' />
+                        <input type='password' className='form-control' />
                     </div>
                     <div className='text-center'>
                         <Link to='/' className='btn btn-primary login-width'>Login</Link>
