@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CyberArtBoard/static/css/main.4b3d22cb.css",
-    "main.js": "/CyberArtBoard/static/js/main.8b305f8a.js",
+    "main.css": "/CyberArtBoard/static/css/main.e968a520.css",
+    "main.js": "/CyberArtBoard/static/js/main.2cd51a51.js",
     "static/js/592.174a5230.chunk.js": "/CyberArtBoard/static/js/592.174a5230.chunk.js",
     "static/media/about-banner.png": "/CyberArtBoard/static/media/about-banner.74f196e832b21d252185.png",
     "static/media/aboutImg5.png": "/CyberArtBoard/static/media/aboutImg5.615533165934614e3cb5.png",
@@ -40,12 +40,12 @@
     "static/media/sustainable-custom-apparel.jpg": "/CyberArtBoard/static/media/sustainable-custom-apparel.9a432175bbbbccd65c3d.jpg",
     "static/media/icon.png": "/CyberArtBoard/static/media/icon.ba47b2e6ea41a7f68ea5.png",
     "index.html": "/CyberArtBoard/index.html",
-    "main.4b3d22cb.css.map": "/CyberArtBoard/static/css/main.4b3d22cb.css.map",
-    "main.8b305f8a.js.map": "/CyberArtBoard/static/js/main.8b305f8a.js.map",
+    "main.e968a520.css.map": "/CyberArtBoard/static/css/main.e968a520.css.map",
+    "main.2cd51a51.js.map": "/CyberArtBoard/static/js/main.2cd51a51.js.map",
     "592.174a5230.chunk.js.map": "/CyberArtBoard/static/js/592.174a5230.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b3d22cb.css",
-    "static/js/main.8b305f8a.js"
+    "static/css/main.e968a520.css",
+    "static/js/main.2cd51a51.js"
   ]
 }
