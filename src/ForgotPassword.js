@@ -6,7 +6,7 @@ import React from 'react'
 export default function ForgotPassword() {
     return (
         <>
-            <div className='col-lg-3 mx-auto login-container'>
+            <div className='mx-auto login-container'>
                 <div className='text-center mb-4 pb-2'>
                     <Link className="navbar-brand" to='/'>
                         <img src={logo} title='Cyber ArtBoard' alt="Cyber ArtBoard" className="login-logo" />

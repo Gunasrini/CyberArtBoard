@@ -228,6 +228,19 @@
     h2.product-page-title {
         font-size: 22px;
     }
+
+    .login-container {
+        max-width: 100%;
+    }
+
+    .social-logins {
+        text-align: center;
+    }
+    
+    .social-logins .redirect-text {
+        display: block;
+        padding: 10px 0 0;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width:359px) {
@@ -377,6 +390,10 @@
 
     .collaboration-section .list-item {
         padding: 30px 0;
+    }
+
+    .login-container {
+        max-width: 80%;
     }
 }
 

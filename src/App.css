@@ -1,5 +1,6 @@
 .login-container {
-    margin-top: 4%;
+    margin-top: 2%;
+    max-width: 30%;
 }
 
 .login-title {
@@ -45,6 +46,22 @@
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.google-btn {
+    margin-bottom: 15px;
+}
+
+.social-logins .redirect-text {
+    padding: 0 0 0 15px;
+}
+
+.google-btn .redirect-text:hover {
+    color: #dc3545;
+}
+
+.social-logins .btn {
+    min-width: 175px;
 }
 
 .sketch2design-banner-section {
