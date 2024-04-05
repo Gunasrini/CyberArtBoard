@@ -71,6 +71,7 @@ h2.product-page-title {
     align-items: center;
     margin: 25px 0 0 auto;
     justify-content: center;
+    border: 0;
 }
 
 .generate-btn .btn {
@@ -82,6 +83,10 @@ h2.product-page-title {
     padding-left: 2px;
     padding-right: 0;
     border: 0;
+}
+
+.generate-btn:disabled {
+    opacity: 0.6;
 }
 
 .generate-btn .icon-img img {

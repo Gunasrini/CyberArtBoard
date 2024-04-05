@@ -1,9 +1,42 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import iconImg from '../assets/images/icon.png';
 import { Link } from 'react-router-dom';
 import GenerateImgSection from './GenerateImgSection';
+import axios from 'axios';
+import Img2DesignModal from '../modals/Img2DesignModal';
 
 export default function Text2Design() {
+
+    const [promptText, setPromptText] = useState("");
+    const [loading, setLoading] = useState(false);
+
+    const [data, setData] = useState([]);    
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        setLoading(true);
+
+        const reqBody = {
+            promt_text: promptText
+        }
+
+        fetch('https://cyberartboard.zeroinfo.in/api/stable-diffusion', {
+        method: 'POST',
+        body: JSON.stringify(reqBody),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+        setData(data);
+        setLoading(false);
+    })
+    .catch((err) => console.log(err));
+    }
+
     return (
         <>
             <div className='container my-4 py-2'>
@@ -21,19 +54,50 @@ export default function Text2Design() {
                                 <input type='text' className='form-control' placeholder='Style theme' />
                             </div>
                             <div className='prompt-section'>
-                                <textarea className='form-control prompt' placeholder="Prompt:"></textarea>
+                                <textarea className='form-control prompt' value={promptText} onChange={(e) => setPromptText(e.target.value)} placeholder="Prompt:" required></textarea>
                             </div>
                             <div className='prompt-section'>
                                 <textarea className='form-control prompt' placeholder="Negative Prompt:"></textarea>
                             </div>
-                            <div className='generate-btn'>
-                                <span className='icon-img'><img src={iconImg} alt="" /></span>
+                            <button className='generate-btn' onClick={handleSubmit} disabled={promptText.length === 0}>
+                                <a className='btn'><span className='icon-img'><img src={iconImg} alt="" /></span>Generate</a>
+                            </button>
+                            {/* <div className='generate-btn' onClick={handleSubmit} disabled={promptText.length === 0}>
+                                <a className='btn'><span className='icon-img'><img src={iconImg} alt="" /></span>Generate</a>                                
                                 <Link to='/products/order' title='Generate' className='btn'>Generate</Link>
-                            </div>
+                            </div> */}
                         </form>
                     </div>
-                    <div className='col-md-7 products-description'>
-                        <GenerateImgSection />
+                    <div className='col-md-7 products-description'>  
+                        {
+                            loading ? <h3>Generating images... Please wait.</h3> :
+                        <> 
+                        <div className='description-row'>
+                            <div className='image-grid'>
+                                {                                   
+                                    Object.values(data).map((item, i) => (
+                                        <>
+                                            <div className='gridItem' key={0}>
+                                    <img src={item[0]} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
+                                </div>
+                                <div className='gridItem' key={1}>
+                                    <img src={item[1]} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
+                                </div>
+                                <div className='gridItem' key={2}>
+                                    <img src={item[2]} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
+                                </div>
+                                <div className='gridItem' key={3}>
+                                    <img src={item[3]} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
+                                </div>
+                                        </>
+                                    ))
+                                }
+                                
+                            </div>
+                        </div>
+                        </>
+                    }
+                        <Img2DesignModal />
                         <div className='radio-btn-row'>
                             {/* <label className="radio-wrap">
                                 <input type="radio" name="radio" />
@@ -51,9 +115,9 @@ export default function Text2Design() {
                                 <input type="radio" name="radio" />
                                 <span className="checkmark">U4</span>
                             </label> */}
-                            <div className='reset-icon'>
+                            {/* <div className='reset-icon'>
                                 <i className="fa-solid fa-arrows-rotate"></i>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
