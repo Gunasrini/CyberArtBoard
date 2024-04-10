@@ -89,10 +89,9 @@
     padding: 5px 20px;
 }
 
-.welcome-message {
+/* .welcome-message {
     font-size: 1.2rem; 
     color: #706b6b;
-    /* margin-bottom: 20px; */
     text-align: center; 
     margin-right: 12px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -111,4 +110,16 @@
 }
 .logutbutton:hover{
     color: lightcoral;
+} */
+
+.logout{
+    padding: 7px;
+    width: 200px;
+    border: 1px solid gray;
+    text-align: center;
+    margin-left: 20px;
 }
+/* .bottomLine{
+    margin-bottom: 50px;
+    border-bottom: 1px solid gray;
+} */

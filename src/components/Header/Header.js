@@ -2,18 +2,18 @@ import React from "react";
 import '../Header/Header.css';
 import logo from '../../assets/images/logo.PNG';
 import { Link } from "react-router-dom";
-import { RiLogoutCircleLine } from "react-icons/ri";
-import { useNavigate } from "react-router-dom";
+// import { RiLogoutCircleLine } from "react-icons/ri";
+// import { useNavigate } from "react-router-dom";
 
 export default function Header() {
 
   const userData = localStorage.getItem('user');
   const parsedUserData = JSON.parse(userData);
   console.log('User data retrieved from localStorage:', parsedUserData);
-  const navigate = useNavigate();
-  function Logout(){
-    navigate('/login');
-  }
+  // const navigate = useNavigate();
+  // function Logout(){
+  //   navigate('/login');
+  // }
   return (
     <>
       <header className="header">
@@ -23,12 +23,28 @@ export default function Header() {
               <img src={logo} alt="Cyber ArtBoard" className="site-logo" />
             </Link>
             <div className="header-buttons">
-            <div className="welcome-container">
-              <p className="welcome-message">Welcome <span>{parsedUserData?.name}</span></p>
-            </div>              
-              <Link to='login' className="icons" title="Profile">
+            {/* <div className="welcome-container">
+              <p className="welcome-message">Welcome <span>{parsedUserData.name}</span></p>
+            </div>               */}
+              {/* <Link to='login' className="icons" title="Profile">
                 <i className="far fa-user"></i>
-              </Link>
+              </Link> */}
+              <li className="nav-item dropdown">
+                <Link className="nav-link" role="button" data-bs-toggle="dropdown"><i className="far fa-user"></i></Link>
+                <ul className="dropdown-menu dropdown-menu-end">
+                  <li><Link className="dropdown-item">{parsedUserData?.name}</Link></li>
+                  <li><Link className="dropdown-item">{parsedUserData?.email}</Link></li>
+                  <li><Link className="dropdown-item logout" to="/login">Sign Out</Link>
+                  <div className="bottomLine"></div>
+                  </li>
+                  <li><Link className="dropdown-item">My Profile</Link></li>
+                  <li><Link className="dropdown-item">My Design Library</Link></li>
+                  <li><Link className="dropdown-item">My Orders</Link></li>
+                  <li><Link className="dropdown-item">Invite My Friend</Link></li>
+                  <li><Link className="dropdown-item">Payment Methods</Link></li>
+                  <li><Link className="dropdown-item" to="/contact">Support</Link></li>
+                </ul>
+              </li>
               <li className="nav-item dropdown">
                 <Link className="nav-link" role="button" data-bs-toggle="dropdown"><i className="fas fa-bars"></i></Link>
                 <ul className="dropdown-menu dropdown-menu-end">
@@ -43,7 +59,7 @@ export default function Header() {
                   <li><Link className="dropdown-item" to="/contact">Contact Us</Link></li>
                 </ul>
               </li>
-              <RiLogoutCircleLine className="logutbutton" title="Logout" onClick={Logout} />
+              {/* <RiLogoutCircleLine className="logutbutton" title="Logout" onClick={Logout} /> */}
             </div>
           </div>
         </nav>
