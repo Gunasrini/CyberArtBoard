@@ -3,14 +3,14 @@ import generateImg from '../assets/images/generateImg1.png';
 import iconImg from '../assets/images/icon.png';
 import { useNavigate } from 'react-router-dom';
 
-export default function Img2DesignModal() {
+export default function Img2DesignModal(props) {
 
     const navigate = useNavigate();
 
     const redirectToOrderPage = (e) => {
         e.preventDefault();
-        navigate('/products/order');
-    }
+        navigate(`/products/order`);
+        }
     return (
         <>
             <div className="modal modal-md" id="img2DesignModal">
@@ -18,7 +18,7 @@ export default function Img2DesignModal() {
                     <div className="modal-content">
                         <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
                         <div className='col-md-10 left-design-image'>
-                            <img src={generateImg} alt="" />
+                            <img src={props.imageSrc} alt="" />
                             <div className='img-desc'>
                                 <p>User Name: </p>
                                 <p>Date: </p>
@@ -43,6 +43,8 @@ export default function Img2DesignModal() {
                     </div>
                 </div>
             </div>
+            
         </>
     )
+    
 }

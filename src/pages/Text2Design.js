@@ -9,6 +9,7 @@ export default function Text2Design() {
 
     const [promptText, setPromptText] = useState("");
     const [loading, setLoading] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
 
     const [data, setData] = useState([]);    
 
@@ -36,6 +37,10 @@ export default function Text2Design() {
     })
     .catch((err) => console.log(err));
     }
+
+    const handleImageClick = (src) => {
+        setSelectedImage(src);
+      };
 
     return (
         <>
@@ -78,16 +83,16 @@ export default function Text2Design() {
                                     Object.values(data).map((item, i) => (
                                         <>
                                             <div className='gridItem' key={0}>
-                                    <img src={item[0]} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
+                                    <img src={item[0]} alt="" onClick={() => handleImageClick(item[0])} data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
                                 </div>
                                 <div className='gridItem' key={1}>
-                                    <img src={item[1]} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
+                                    <img src={item[1]} alt="" onClick={() => handleImageClick(item[1])} data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
                                 </div>
                                 <div className='gridItem' key={2}>
-                                    <img src={item[2]} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
+                                    <img src={item[2]} alt="" onClick={() => handleImageClick(item[2])} data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
                                 </div>
                                 <div className='gridItem' key={3}>
-                                    <img src={item[3]} alt="" data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
+                                    <img src={item[3]} alt="" onClick={() => handleImageClick(item[3])} data-bs-toggle="modal" data-bs-target="#img2DesignModal" />
                                 </div>
                                         </>
                                     ))
@@ -97,7 +102,7 @@ export default function Text2Design() {
                         </div>
                         </>
                     }
-                        <Img2DesignModal />
+                        <Img2DesignModal imageSrc={selectedImage} />
                         <div className='radio-btn-row'>
                             {/* <label className="radio-wrap">
                                 <input type="radio" name="radio" />

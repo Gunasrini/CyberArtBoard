@@ -88,3 +88,27 @@
     font-weight: 600;
     padding: 5px 20px;
 }
+
+.welcome-message {
+    font-size: 1.2rem; 
+    color: #706b6b;
+    /* margin-bottom: 20px; */
+    text-align: center; 
+    margin-right: 12px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.welcome-message span {
+    font-weight: bold; 
+    color: #007bff;
+}
+.logutbutton{
+    width: 45px;
+    height: 26px;
+    color: red;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+.logutbutton:hover{
+    color: lightcoral;
+}

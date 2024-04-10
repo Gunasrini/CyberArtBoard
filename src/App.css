@@ -217,3 +217,8 @@ textarea.prompt.form-control {
     color: #f26b22;
     padding: 0 0 0 20px;
 }
+
+.radio-btn-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
