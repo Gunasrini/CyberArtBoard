@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../components/Header/Header'
-import Footer from './Footer'
+// import Footer from './Footer'
 import iconImg from '../assets/images/icon.png';
 import { Link } from 'react-router-dom';
 

@@ -152,7 +152,7 @@ const Order = () => {
                 ))}
                 <div className='sub-total'>
                   <label>Sub Total</label>
-                  <input type="text" className='form-control total' value={juniorSubtotal==0?'':juniorSubtotal} readOnly />
+                  <input type="text" className='form-control total' value={juniorSubtotal===0?'':juniorSubtotal} readOnly />
                 </div>
               </div>
               <Shipping />

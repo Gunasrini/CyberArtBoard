@@ -1,8 +1,8 @@
 import React from 'react'
-import generateImg1 from '../assets/images/generateImg1.png';
-import generateImg2 from '../assets/images/generateImg2.png';
-import generateImg3 from '../assets/images/generateImg3.png';
-import generateImg4 from '../assets/images/generateImg4.png';
+// import generateImg1 from '../assets/images/generateImg1.png';
+// import generateImg2 from '../assets/images/generateImg2.png';
+// import generateImg3 from '../assets/images/generateImg3.png';
+// import generateImg4 from '../assets/images/generateImg4.png';
 import Img2DesignModal from '../modals/Img2DesignModal';
 
 export default function GenerateImgSection() {

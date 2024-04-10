@@ -1,5 +1,5 @@
 import React from 'react'
-import generateImg from '../assets/images/generateImg1.png';
+// import generateImg from '../assets/images/generateImg1.png';
 import iconImg from '../assets/images/icon.png';
 import { useNavigate } from 'react-router-dom';
 

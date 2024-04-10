@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import iconImg from '../assets/images/icon.png';
-import { Link } from 'react-router-dom';
-import GenerateImgSection from './GenerateImgSection';
-import axios from 'axios';
+// import GenerateImgSection from './GenerateImgSection';
+// import axios from 'axios';
 import Img2DesignModal from '../modals/Img2DesignModal';
+import { Link } from 'react-router-dom';
 
 export default function Text2Design() {
 
@@ -65,7 +65,7 @@ export default function Text2Design() {
                                 <textarea className='form-control prompt' placeholder="Negative Prompt:"></textarea>
                             </div>
                             <button className='generate-btn' onClick={handleSubmit} disabled={promptText.length === 0}>
-                                <a className='btn'><span className='icon-img'><img src={iconImg} alt="" /></span>Generate</a>
+                                <Link className='btn'><span className='icon-img'><img src={iconImg} alt="" /></span>Generate</Link>
                             </button>
                             {/* <div className='generate-btn' onClick={handleSubmit} disabled={promptText.length === 0}>
                                 <a className='btn'><span className='icon-img'><img src={iconImg} alt="" /></span>Generate</a>                                
