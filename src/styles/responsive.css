@@ -297,6 +297,7 @@
     .dreams-true-slider .slider-sec {
         width: 50%;
         padding: 0;
+        margin-bottom: 10px;
     }
 
     .dreams-true-slider .slider-sec h3 {
@@ -403,6 +404,17 @@
     }
 }
 
+@media (min-width: 428px) and (max-width: 430px) {
+    .site-logo {
+        width: 90px;
+    }
+    
+    #home-banner-video {
+        height: 310px;
+    }
+}
+
+
 
 @media screen and (min-width: 768px) and (max-width:1024px) {
     .site-logo {
@@ -411,7 +423,7 @@
 
     .banner-section h2.wrapped-text {
         max-width: 100%;
-        font-size: 45px;
+        font-size: 50px;
     }
 
     #home-banner-video {
