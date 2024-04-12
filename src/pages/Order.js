@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-import generateImg1 from '../assets/images/generateImg1.png';
+import React, { useState,useRef } from 'react';
+// import generateImg1 from '../assets/images/generateImg1.png';
 import Header from '../components/Header/Header';
 import Shipping from './Shipping';
+import { useLocation } from 'react-router-dom';
+
 
 const Order = () => {
   const [adultSizes, setAdultSizes] = useState({
@@ -26,6 +28,25 @@ const Order = () => {
 
   const [adultSubtotal, setAdultSubtotal] = useState('');
   const [juniorSubtotal, setJuniorSubtotal] = useState('');
+  const fileInputRef = useRef(null);
+  const [file, setFile] = useState(null);
+  const location = useLocation();
+  const image = location.state?.image;
+
+    const handleIconClick = () => {
+        fileInputRef.current.click();
+    };
+
+    const handleFileChange = (event) => {
+        const selectedFile = event.target.files[0];
+        console.log("selected fileeeeeeeeeeeeeee",selectedFile);
+        if (selectedFile) {
+            setFile(selectedFile);
+        }
+        if(selectedFile===undefined){
+            setFile(null);
+        }
+    };
 
   const handleAdultSizeChange = (size, value) => {
     const updatedSizes = { ...adultSizes, [size]: value };
@@ -60,7 +81,7 @@ const Order = () => {
           <div className='col-md-5 products-input-field'>
             <form className='leftside-form'>
               <div className='sketch-section'>
-                <img src={generateImg1} alt='' />
+                <img src={image} alt='' />
               </div>
               <div className='price-guide-desc'>
                 <div className='form-row'>
@@ -89,13 +110,28 @@ const Order = () => {
                 </div>
               </div>
               <div className='logo-attachment-sec'>
-                <h4>Logo Attachment:</h4>
-                {/* <span className='icon'><i className="fas fa-paperclip"></i></span> */}
-                <input
-        type="file"
-        accept=".png, .jpg, .jpeg"
-      />
-              </div>
+            <h4>Logo Attachment:</h4>
+            <span className='icon' onClick={handleIconClick}>
+                <i className="fas fa-paperclip"></i>
+            </span>
+            <input
+                ref={fileInputRef}
+                className='logo-attach'
+                type="file"
+                accept=".png, .jpg, .jpeg"
+                style={{ display: 'none' }}
+                onChange={handleFileChange}
+            />
+            {file && (
+                <div className='file-details'>
+                    {/* <p>Selected File: {file.name}</p> */}
+                    <p className='file-name'>{file.name}</p>
+                    {/* Display an image preview */}
+                    {/* <img src={URL.createObjectURL(file)} alt="Preview" style={{ width: '100px', height: '100px' }} /> */}
+                </div>
+            )}
+        </div>
+
               <div className='comments-section'>
                 <textarea className="form-control prompt" placeholder='Special Notes:'></textarea>
               </div>
