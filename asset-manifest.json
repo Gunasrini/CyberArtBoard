@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CyberArtBoard/static/css/main.bf161d81.css",
+    "main.css": "/CyberArtBoard/static/css/main.d73e2252.css",
     "main.js": "/CyberArtBoard/static/js/main.10bfef01.js",
     "static/js/592.174a5230.chunk.js": "/CyberArtBoard/static/js/592.174a5230.chunk.js",
     "static/media/about-banner.png": "/CyberArtBoard/static/media/about-banner.74f196e832b21d252185.png",
@@ -40,12 +40,12 @@
     "static/media/sustainable-custom-apparel.jpg": "/CyberArtBoard/static/media/sustainable-custom-apparel.9a432175bbbbccd65c3d.jpg",
     "static/media/icon.png": "/CyberArtBoard/static/media/icon.ba47b2e6ea41a7f68ea5.png",
     "index.html": "/CyberArtBoard/index.html",
-    "main.bf161d81.css.map": "/CyberArtBoard/static/css/main.bf161d81.css.map",
+    "main.d73e2252.css.map": "/CyberArtBoard/static/css/main.d73e2252.css.map",
     "main.10bfef01.js.map": "/CyberArtBoard/static/js/main.10bfef01.js.map",
     "592.174a5230.chunk.js.map": "/CyberArtBoard/static/js/592.174a5230.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf161d81.css",
+    "static/css/main.d73e2252.css",
     "static/js/main.10bfef01.js"
   ]
 }
