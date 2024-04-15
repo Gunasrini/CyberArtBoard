@@ -1,19 +1,46 @@
 import React from "react";
+import { useState } from "react";
 import '../Header/Header.css';
 import logo from '../../assets/images/logo.PNG';
 import { Link } from "react-router-dom";
 // import { RiLogoutCircleLine } from "react-icons/ri";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 export default function Header() {
-
+  // const [loading, setLoading] = useState(false);
+  const [LogOut,setLogout]=useState(false);
   const userData = localStorage.getItem('user');
   const parsedUserData = JSON.parse(userData);
   console.log('User data retrieved from localStorage:', parsedUserData);
-  // const navigate = useNavigate();
-  // function Logout(){
-  //   navigate('/login');
-  // }
+  const navigate = useNavigate();
+  const Logout=(e)=>{
+    e.preventDefault();
+    // alert("are you sure you want to signout !");
+    fetch('https://cyberartboard.zeroinfo.in/api/post-logout', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  }
+})
+.then(response => {
+  if (response.ok) {
+    return response.json();
+  }
+  throw new Error('Network response was not ok.');
+})
+.then(data => {
+  console.log('Logout successful:', data);
+  setLogout(true);
+  navigate('/');
+
+})
+.catch(error => {
+  console.error('Logout failed:', error);
+});
+  // setLoading(false);
+  }
+
+
   return (
     <>
       <header className="header">
@@ -32,9 +59,9 @@ export default function Header() {
               <li className="nav-item dropdown">
                 <Link className="nav-link" role="button" data-bs-toggle="dropdown"><i className="far fa-user"></i></Link>
                 <ul className="dropdown-menu dropdown-menu-end">
-                  <li><Link className="dropdown-item">{parsedUserData?.name}</Link></li>
+                  { LogOut===false &&<li><Link className="dropdown-item">{parsedUserData?.name}</Link></li>}
                   <li><Link className="dropdown-item">{parsedUserData?.email}</Link></li>
-                  <li><Link className="dropdown-item logout" to="/login">Sign Out</Link>
+                  <li><Link className="dropdown-item logout" onClick={Logout}>Sign Out</Link>
                   <div className="bottomLine"></div>
                   </li>
                   <li><Link className="dropdown-item">My Profile</Link></li>
