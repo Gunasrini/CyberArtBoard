@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CyberArtBoard/static/css/main.d73e2252.css",
-    "main.js": "/CyberArtBoard/static/js/main.10bfef01.js",
+    "main.js": "/CyberArtBoard/static/js/main.e9ea6a18.js",
     "static/js/592.174a5230.chunk.js": "/CyberArtBoard/static/js/592.174a5230.chunk.js",
     "static/media/about-banner.png": "/CyberArtBoard/static/media/about-banner.74f196e832b21d252185.png",
     "static/media/aboutImg5.png": "/CyberArtBoard/static/media/aboutImg5.615533165934614e3cb5.png",
@@ -41,11 +41,11 @@
     "static/media/icon.png": "/CyberArtBoard/static/media/icon.ba47b2e6ea41a7f68ea5.png",
     "index.html": "/CyberArtBoard/index.html",
     "main.d73e2252.css.map": "/CyberArtBoard/static/css/main.d73e2252.css.map",
-    "main.10bfef01.js.map": "/CyberArtBoard/static/js/main.10bfef01.js.map",
+    "main.e9ea6a18.js.map": "/CyberArtBoard/static/js/main.e9ea6a18.js.map",
     "592.174a5230.chunk.js.map": "/CyberArtBoard/static/js/592.174a5230.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d73e2252.css",
-    "static/js/main.10bfef01.js"
+    "static/js/main.e9ea6a18.js"
   ]
 }
