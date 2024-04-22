@@ -1,17 +1,15 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import '../Header/Header.css';
 import logo from '../../assets/images/logo.PNG';
 import { Link } from "react-router-dom";
 // import { RiLogoutCircleLine } from "react-icons/ri";
 import { useNavigate } from 'react-router-dom';
 
-export default function Header() {
-  // const [loading, setLoading] = useState(false);
+export default function Header(props) {
   const [LogOut,setLogout]=useState(false);
   const userData = localStorage.getItem('user');
   const parsedUserData = JSON.parse(userData);
-  console.log('User data retrieved from localStorage:', parsedUserData);
   const navigate = useNavigate();
   const Logout=(e)=>{
     e.preventDefault();
@@ -31,14 +29,17 @@ export default function Header() {
 .then(data => {
   console.log('Logout successful:', data);
   setLogout(true);
-  navigate('/');
+  navigate('/',{state:{logoutVal:true}});
 
 })
 .catch(error => {
   console.error('Logout failed:', error);
 });
-  // setLoading(false);
   }
+
+  useEffect(()=>{
+    setLogout(props.boolVal);
+  })
 
 
   return (
@@ -52,18 +53,23 @@ export default function Header() {
             <div className="header-buttons">
             {/* <div className="welcome-container">
               <p className="welcome-message">Welcome <span>{parsedUserData.name}</span></p>
-            </div>               */}
+            </div>               
+            */}
               {/* <Link to='login' className="icons" title="Profile">
                 <i className="far fa-user"></i>
               </Link> */}
+
               <li className="nav-item dropdown">
                 <Link className="nav-link" role="button" data-bs-toggle="dropdown"><i className="far fa-user"></i></Link>
                 <ul className="dropdown-menu dropdown-menu-end">
-                  { LogOut===false &&<li><Link className="dropdown-item">{parsedUserData?.name}</Link></li>}
-                  <li><Link className="dropdown-item">{parsedUserData?.email}</Link></li>
-                  <li><Link className="dropdown-item logout" onClick={Logout}>Sign Out</Link>
-                  <div className="bottomLine"></div>
-                  </li>
+                {!LogOut && (
+                    <li>
+                        <Link className="dropdown-item">{parsedUserData?.name}</Link>
+                    </li>
+                )}                  
+                   {!LogOut && (<li><Link className="dropdown-item">{parsedUserData?.email}</Link></li>  )}   
+                   {LogOut && (<li><Link className="dropdown-item logout" to="/login">Login</Link></li>)}
+                  {!LogOut && (<li><Link className="dropdown-item logout" onClick={Logout}>Sign Out</Link></li>)}
                   <li><Link className="dropdown-item">My Profile</Link></li>
                   <li><Link className="dropdown-item">My Design Library</Link></li>
                   <li><Link className="dropdown-item">My Orders</Link></li>
