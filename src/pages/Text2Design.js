@@ -14,9 +14,12 @@ export default function Text2Design() {
     const [selectedImage, setSelectedImage] = useState('');
     const [getCategory, setCategory] = useState([]);
     const [industry, setIndustry] = useState('');
-    const [productsName,setProductDropdown]=useState([]);
-    const [productVal,setProductName]=useState('');
-
+    console.log("cccccccccccccccccccccccccc", industry);
+    const [productsName, setProductDropdown] = useState([]);
+    const [productVal, setProductName] = useState('');
+    const [ThemeDropdown, setThemeDropdown] = useState([]);
+    const [ThemeVal, setThemeValue] = useState("");
+    const [fabricValues, setFabricValues] = useState('');
     const [data, setData] = useState([]);
 
     const handleSubmit = (e) => {
@@ -25,7 +28,10 @@ export default function Text2Design() {
         setLoading(true);
         setLoader(false);
         const reqBody = {
-            promt_text: promptText
+            promt_text: promptText,
+            category: industry,
+            product: productVal,
+            theme: ThemeVal,
         }
 
         fetch('https://cyberartboard.zeroinfo.in/api/stable-diffusion', {
@@ -49,42 +55,70 @@ export default function Text2Design() {
     };
 
     const handleIndustryChange = (e) => {
-    console.log("eeeeeeeeeeeeeeeeeeeeeeeeeee",typeof(e.target.value));
-    if(e.target.value===''){
-        setProductDropdown([]);
-    }else{
-    setIndustry(e.target.value);
-    console.log("get productsssssssssssssssssssssssss",e.target.value);
-    const getProduct=fetch('https://cyberartboard.zeroinfo.in/api/get-product-name')
-    .then(response=>response.json())
-    .then(res=>{
-        console.log("get product drop down values",res);
-        console.log("hhhhhhhhhhhhhhhhhhhh",res.productName[0].id);
-        console.log("nyyyyyyyyyyyyyyyyyyyyyyy",typeof(res.productName[0].id));
+        if (e.target.value === '') {
+            setProductDropdown([]);
+        } else {
+            // setIndustry(e.target.value);
+            let Category_value = getCategory.filter(item => item.value === Number(e.target.value));
+            setIndustry(Category_value[0].label)
+            fetch('https://cyberartboard.zeroinfo.in/api/get-product-name')
+                .then(response => response.json())
+                .then(res => {
+                    const product_name = res.productName
+                        .filter(product => product.id === Number(e.target.value))
+                        .map(product => ({
+                            value: product.id,
+                            label: product.product_name
+                        }));
+                    setProductDropdown(product_name);
+                })
+        }
+    };
 
-        const product_name=res.productName
-        .filter(product => product.id === Number(e.target.value)) // Filter by specific ID
-        .map(product => ({
-            value: product.product_name,
-            label: product.product_name
-        }));
-        console.log("product drop downssssssssssssss",product_name);
-        setProductDropdown(product_name);
-    })
+    const handleProductChange = (e) => {
+        // setProductName(e.target.value);
+        if (e.target.value === '') {
+            setThemeDropdown([]);
+        } else {
+            let Product_value = productsName.filter(item => item.value === Number(e.target.value));
+            setProductName(Product_value[0].label);
+            fetch('https://cyberartboard.zeroinfo.in/api/get-theme')
+                .then(response => response.json())
+                .then(res => {
+                    const theme = res.theme
+                        .filter(theme => theme.product_id === Number(e.target.value))
+                        .map(themeValue => ({
+                            value: themeValue.product_id,
+                            label: themeValue.theme
+                        }));
+                    setThemeDropdown(theme);
+                })
 
-    const getTheme=fetch('https://cyberartboard.zeroinfo.in/api/get-theme')
-    .then(response=>response.json())
-    .then(res=>{
-        console.log("get theme drop down values",res.theme[0].theme[0].theme);
-        // const theme=res.productName.map(products=>({
-        //     value:products.product_name,
-        //     label:products.product_name
-        // }));
-        // console.log("product drop downssssssssssssss",product_name);
-        // setProductDropdown(product_name);
-    })
-}
-  };
+            ////fabric//////
+            fetch('https://cyberartboard.zeroinfo.in/api/get-fabric')
+                .then(response => response.json())
+                .then(res => {
+                    const getFabric = res.theme
+                        .filter(fabric => fabric.product_id === Number(e.target.value))
+                        .map(fabValue => ({
+                            value: fabValue.fabric_id,
+                            label: fabValue.theme
+                        }));
+                    setFabricValues(getFabric);
+
+                })
+        }
+    }
+
+    const handleStyleThemeChange = (e) => {
+        // setThemeValue(e.target.value);
+        if (e.target.value === '') {
+            setThemeValue('');
+        } else {
+            let Theme_value = ThemeDropdown.filter(item => item.value === Number(e.target.value));
+            setThemeValue(Theme_value[0].label);
+        }
+    }
 
     useEffect(() => {
         fetch('https://cyberartboard.zeroinfo.in/api/get-category')
@@ -94,7 +128,6 @@ export default function Text2Design() {
                     value: cat.id,
                     label: cat.category
                 }));
-                console.log("valueeeeeeeeeeeeeeeeeeeee", formattedCategories);
                 setCategory(formattedCategories);
             })
             .catch(error => console.error('Error fetching categories:', error));
@@ -108,22 +141,22 @@ export default function Text2Design() {
                     <div className='col-md-5 products-input-field'>
                         <form>
                             <div className='form-row'>
-                                    <select
-                                        className='form-control'
-                                        aria-label='Select industry'
-                                    value={industry}
+                                <select
+                                    className='form-control'
+                                    aria-label='Select industry'
+                                    // value={industry}
                                     onChange={handleIndustryChange}
-                                    >
-                                        <option value="">Select an industry</option>
-                                        {/* Map through getCategory array to render options */}
-                                        {getCategory.map(category => (
-                                            <option key={category.value} value={category.value}>
-                                                {category.label}
-                                            </option>
-                                        ))}
-                                    </select>
-                                </div>
-                                {/* <Select
+                                >
+                                    <option value="">Select an industry</option>
+                                    {/* Map through getCategory array to render options */}
+                                    {getCategory.map(category => (
+                                        <option key={category.value} value={category.value}>
+                                            {category.label}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
+                            {/* <Select
             options={getCategory}
             // onChange={handleChange}
             placeholder="Select Category"
@@ -131,31 +164,33 @@ export default function Text2Design() {
                             <div className='form-row'>
                                 <select
                                     className='form-control'
-                                    value={productVal}
-                                    // onChange={handleProductChange}
+                                    // value={productVal}
+                                    onChange={handleProductChange}
                                     aria-label='Select product'
                                 >
                                     <option value="">Select a product</option>
-                                        {/* Map through getCategory array to render options */}
-                                        {productsName.map(product => (
-                                            <option key={product.value} value={product.value}>
-                                                {product.label}
-                                            </option>
-                                        ))}
+                                    {/* Map through getCategory array to render options */}
+                                    {productsName.map(product => (
+                                        <option key={product.value} value={product.value}>
+                                            {product.label}
+                                        </option>
+                                    ))}
                                 </select>
                             </div>
                             <div className='form-row'>
                                 <select
                                     className='form-control'
-                                    // value={styleTheme}
-                                    // onChange={handleStyleThemeChange}
+                                    // value={ThemeVal}
+                                    onChange={handleStyleThemeChange}
                                     aria-label='Select style theme'
                                 >
-                                    <option value="">Select a style theme</option>
-                                    <option value="light">Light</option>
-                                    <option value="dark">Dark</option>
-                                    <option value="colorful">Colorful</option>
-                                    <option value="minimalist">Minimalist</option>
+                                    <option value="">Select a Theme</option>
+                                    {/* Map through getCategory array to render options */}
+                                    {ThemeDropdown.map(theme => (
+                                        <option key={theme.value} value={theme.value}>
+                                            {theme.label}
+                                        </option>
+                                    ))}
                                 </select>
                             </div>
                             <div className='prompt-section'>
@@ -164,7 +199,7 @@ export default function Text2Design() {
                             <div className='prompt-section'>
                                 <textarea className='form-control prompt' placeholder="Negative Prompt:"></textarea>
                             </div>
-                            <button className='generate-btn' onClick={handleSubmit} disabled={promptText.length === 0}>
+                            <button className='generate-btn' onClick={handleSubmit} disabled={industry.length === 0 || productVal.length === 0 || ThemeVal.length === 0}>
                                 <a className='btn'><span className='icon-img'><img src={iconImg} alt="" /></span>Generate</a>
                             </button>
                             {/* <div className='generate-btn' onClick={handleSubmit} disabled={promptText.length === 0}>
@@ -174,17 +209,17 @@ export default function Text2Design() {
                         </form>
                     </div>
                     <div className='col-md-7 products-description'>
-                        {loader===true && 
-                    <div className='description-row'>
-                <div className='image-grid'>
-                    <div className='gridItem'></div>
-                    <div className='gridItem'></div>
-                    <div className='gridItem'></div>
-                    <div className='gridItem'></div>
-                </div>
-            </div>}
+                        {loader === true &&
+                            <div className='description-row'>
+                                <div className='image-grid'>
+                                    <div className='gridItem'></div>
+                                    <div className='gridItem'></div>
+                                    <div className='gridItem'></div>
+                                    <div className='gridItem'></div>
+                                </div>
+                            </div>}
                         {
-                            
+
                             loading ? <h3>Generating images... Please wait.</h3> :
                                 <>
 
@@ -213,7 +248,7 @@ export default function Text2Design() {
                                     </div>
                                 </>
                         }
-                        <Img2DesignModal imageSrc={selectedImage} />
+                        <Img2DesignModal imageSrc={selectedImage} FabValues={fabricValues} />
                         <div className='radio-btn-row'>
                             {/* <label className="radio-wrap">
                                 <input type="radio" name="radio" />

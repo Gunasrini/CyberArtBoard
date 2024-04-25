@@ -1,4 +1,4 @@
-import React, { useState,useRef } from 'react';
+import React, { useState, useRef } from 'react';
 // import generateImg1 from '../assets/images/generateImg1.png';
 import Header from '../components/Header/Header';
 import Shipping from './Shipping';
@@ -33,20 +33,20 @@ const Order = () => {
   const location = useLocation();
   const image = location.state?.image;
 
-    const handleIconClick = () => {
-        fileInputRef.current.click();
-    };
+  const handleIconClick = () => {
+    fileInputRef.current.click();
+  };
 
-    const handleFileChange = (event) => {
-        const selectedFile = event.target.files[0];
-        console.log("selected fileeeeeeeeeeeeeee",selectedFile);
-        if (selectedFile) {
-            setFile(selectedFile);
-        }
-        if(selectedFile===undefined){
-            setFile(null);
-        }
-    };
+  const handleFileChange = (event) => {
+    const selectedFile = event.target.files[0];
+    console.log("selected fileeeeeeeeeeeeeee", selectedFile);
+    if (selectedFile) {
+      setFile(selectedFile);
+    }
+    if (selectedFile === undefined) {
+      setFile(null);
+    }
+  };
 
   const handleAdultSizeChange = (size, value) => {
     const updatedSizes = { ...adultSizes, [size]: value };
@@ -110,27 +110,27 @@ const Order = () => {
                 </div>
               </div>
               <div className='logo-attachment-sec'>
-            <h4>Logo Attachment:</h4>
-            <span className='icon' onClick={handleIconClick}>
-                <i className="fas fa-paperclip"></i>
-            </span>
-            <input
-                ref={fileInputRef}
-                className='logo-attach'
-                type="file"
-                accept=".png, .jpg, .jpeg"
-                style={{ display: 'none' }}
-                onChange={handleFileChange}
-            />
-            {file && (
-                <div className='file-details'>
+                <h4>Logo Attachment:</h4>
+                <span className='icon' onClick={handleIconClick}>
+                  <i className="fas fa-paperclip"></i>
+                </span>
+                <input
+                  ref={fileInputRef}
+                  className='logo-attach'
+                  type="file"
+                  accept=".png, .jpg, .jpeg"
+                  style={{ display: 'none' }}
+                  onChange={handleFileChange}
+                />
+                {file && (
+                  <div className='file-details'>
                     {/* <p>Selected File: {file.name}</p> */}
                     <p className='file-name'>{file.name}</p>
                     {/* Display an image preview */}
                     {/* <img src={URL.createObjectURL(file)} alt="Preview" style={{ width: '100px', height: '100px' }} /> */}
-                </div>
-            )}
-        </div>
+                  </div>
+                )}
+              </div>
 
               <div className='comments-section'>
                 <textarea className="form-control prompt" placeholder='Special Notes:'></textarea>
@@ -148,28 +148,28 @@ const Order = () => {
             <div className='variation-options'>
               <h3>Adult:</h3>
               <div className='radio-btn-row sub-total'>
-  {Object.keys(adultSizes).map((size, index, array) => {
-    const isLastOfRow = size === "3XL"; // Identify when to wrap to next line
-    return (
-      <React.Fragment key={size}>
-        <div className='btn-wrap'>
-          <label>{size}</label>
-          <input
-            type='text'
-            className='form-control'
-            value={adultSizes[size]}
-            onChange={(e) => handleAdultSizeChange(size, e.target.value)}
-          />
-        </div>
-        {isLastOfRow && <div style={{flexBasis: '100%', height: '0'}}></div>} {/* Force wrap to next line */}
-      </React.Fragment>
-    );
-  })}
-  <div className='sub-total'>
-    <label>Sub Total</label>
-    <input type="text" className='form-control total' value={adultSubtotal === 0 ? '' : adultSubtotal} readOnly />
-  </div>
-</div>
+                {Object.keys(adultSizes).map((size, index, array) => {
+                  const isLastOfRow = size === "3XL"; // Identify when to wrap to next line
+                  return (
+                    <React.Fragment key={size}>
+                      <div className='btn-wrap'>
+                        <label>{size}</label>
+                        <input
+                          type='text'
+                          className='form-control'
+                          value={adultSizes[size]}
+                          onChange={(e) => handleAdultSizeChange(size, e.target.value)}
+                        />
+                      </div>
+                      {isLastOfRow && <div style={{ flexBasis: '100%', height: '0' }}></div>} {/* Force wrap to next line */}
+                    </React.Fragment>
+                  );
+                })}
+                <div className='sub-total'>
+                  <label>Sub Total</label>
+                  <input type="text" className='form-control total' value={adultSubtotal === 0 ? '' : adultSubtotal} readOnly />
+                </div>
+              </div>
 
             </div>
             <div className='variation-options sub-total mt-4'>
@@ -188,7 +188,7 @@ const Order = () => {
                 ))}
                 <div className='sub-total'>
                   <label>Sub Total</label>
-                  <input type="text" className='form-control total' value={juniorSubtotal===0?'':juniorSubtotal} readOnly />
+                  <input type="text" className='form-control total' value={juniorSubtotal === 0 ? '' : juniorSubtotal} readOnly />
                 </div>
               </div>
               <Shipping />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../src/assets/images/logo.PNG';
+import logo from '../src/assets/images/logo.png';
 import GoogleLoginSignup from './GoogleLoginSignup';
 import FacebookLogin from './FacebookLogin';
 import { useNavigate } from 'react-router-dom';
@@ -11,13 +11,13 @@ export default function Login() {
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
-    
+
 
     const userLogin = async (e) => {
         e.preventDefault();
         if (!username || !password) {
             setError('Please enter both username and password.');
-            return; 
+            return;
         }
         const loginUrl = 'https://cyberartboard.zeroinfo.in/api/post-login';
         try {
@@ -42,7 +42,7 @@ export default function Login() {
                 }));
                 navigate('/');
             } else {
-                setError("Username or Password is incorrect!"); 
+                setError("Username or Password is incorrect!");
             }
         } catch (error) {
             console.log('an error occur:', error);
