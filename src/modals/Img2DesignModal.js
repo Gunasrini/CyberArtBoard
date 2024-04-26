@@ -20,7 +20,7 @@ export default function Img2DesignModal(props) {
     const redirectToOrderPage = (e) => {
         e.preventDefault();
         navigate(`/products/order`);
-        navigate('/products/order', { state: { image: props.imageSrc } });
+        navigate('/products/order', { state: { image: props.imageSrc,fabric:props.FabValues } });
         }
 
         const socialMediaShare = (url) => {

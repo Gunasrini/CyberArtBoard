@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import iconImg from '../assets/images/icon.png'
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logo.PNG';
 
 export default function ThankYou() {
     return (

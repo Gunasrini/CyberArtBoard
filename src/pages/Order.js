@@ -32,6 +32,7 @@ const Order = () => {
   const [file, setFile] = useState(null);
   const location = useLocation();
   const image = location.state?.image;
+  const fab=location.state?.fabric ||[];
 
   const handleIconClick = () => {
     fileInputRef.current.click();
@@ -86,7 +87,13 @@ const Order = () => {
               <div className='price-guide-desc'>
                 <div className='form-row'>
                   <select className='form-control'>
-                    <option>Fabric: </option>
+                  <option value="">Select a fabric</option>
+                                    {/* Map through getCategory array to render options */}
+                                    {fab.map(fabric => (
+                                        <option key={fabric.value} value={fabric.value}>
+                                            {fabric.label}
+                                        </option>
+                                    ))}
                   </select>
                 </div>
                 <div className='form-row two-column'>
