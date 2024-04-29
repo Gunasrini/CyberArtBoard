@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Header() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [showSubMenu, setShowSubMenu] = useState(false);
   const parsedUserData = JSON.parse(localStorage.getItem('user'));
   const navigate = useNavigate();
 
@@ -59,11 +60,20 @@ export default function Header() {
                 {!isLoggedIn && (
                   <li><Link className="dropdown-item logout" to="/login">Login</Link></li>
                 )}
-                <li><Link className="dropdown-item">My Profile</Link></li>
-                <li><Link className="dropdown-item">My Design Library</Link></li>
-                <li><Link className="dropdown-item">My Orders</Link></li>
-                <li><Link className="dropdown-item">Invite My Friend</Link></li>
-                <li><Link className="dropdown-item">Payment Methods</Link></li>
+                <li
+                    onMouseEnter={() => setShowSubMenu(true)}
+                    onMouseLeave={() => setShowSubMenu(false)}
+                >
+                    <Link className="dropdown-item">My Account</Link>
+                    {showSubMenu && (
+                        <ul className="sub-menu">
+                            <li><Link className="dropdown-item">My Profile</Link></li>
+                            <li><Link className="dropdown-item">My Design Library</Link></li>
+                            <li><Link className="dropdown-item">Invite My Friend</Link></li>
+                            <li><Link className="dropdown-item">Payment Methods</Link></li>
+                        </ul>
+                    )}
+                </li>
                 <li><Link className="dropdown-item" to="/contact">Support</Link></li>
               </ul>
             </li>

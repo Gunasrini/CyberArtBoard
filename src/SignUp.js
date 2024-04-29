@@ -8,6 +8,7 @@ export default function SignUp() {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate();
 
     function register() {
@@ -50,6 +51,10 @@ export default function SignUp() {
             });
     }
 
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    };
+
 
     return (
         <>
@@ -62,16 +67,19 @@ export default function SignUp() {
                 </div>
                 <div className='login-form'>
                     <div className='mb-4'>
-                        <label>Username</label>
+                        <label>Name</label>
                         <input value={username} onChange={(e) => (setUsername(e.target.value))} type='text' className='form-control' />
                     </div>
                     <div className='mb-4'>
                         <label>Email</label>
                         <input value={email} onChange={(e) => (setEmail(e.target.value))} type='text' className='form-control' />
                     </div>
-                    <div className='mb-4'>
+                    <div className='mb-4 password-input'>
                         <label>Password</label>
-                        <input value={password} onChange={(e) => (setPassword(e.target.value))} type='password' className='form-control' />
+                        <input value={password} onChange={(e) => (setPassword(e.target.value))} type={showPassword?'text':'password'} className='form-control' />
+                        <span className='psw-icon' onClick={togglePasswordVisibility}>
+                                {showPassword ? <i className="far fa-eye"></i> : <i className="far fa-eye-slash"></i>}
+                            </span>
                     </div>
                     <div className='text-center'>
                         <Link onClick={register} className='btn btn-primary login-width'>Create</Link>

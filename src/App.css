@@ -222,3 +222,19 @@ textarea.prompt.form-control {
     display: flex;
     flex-wrap: wrap;
   }
+
+  .password-input {
+    position: relative;
+  }
+
+  .psw-icon{
+  position: absolute;
+  top: 69%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  }
+
+  .sub-menu li {
+    list-style: none;
+}

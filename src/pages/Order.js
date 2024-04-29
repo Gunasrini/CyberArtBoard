@@ -32,7 +32,7 @@ const Order = () => {
   const [file, setFile] = useState(null);
   const location = useLocation();
   const image = location.state?.image;
-  const fab=location.state?.fabric ||[];
+  const fab=location.state?.fabric || [];
 
   const handleIconClick = () => {
     fileInputRef.current.click();
@@ -40,7 +40,6 @@ const Order = () => {
 
   const handleFileChange = (event) => {
     const selectedFile = event.target.files[0];
-    console.log("selected fileeeeeeeeeeeeeee", selectedFile);
     if (selectedFile) {
       setFile(selectedFile);
     }

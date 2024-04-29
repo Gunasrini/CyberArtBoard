@@ -9,6 +9,7 @@ export default function Login() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate();
 
 
@@ -33,7 +34,6 @@ export default function Login() {
             });
 
             const data = await response.json();
-            console.log("testttttttttttttt", data);
             if (response.ok) {
                 console.log('Login Successful:', data);
                 localStorage.setItem('user', JSON.stringify({
@@ -50,6 +50,10 @@ export default function Login() {
         }
     };
 
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    };
+
     return (
         <>
             <div className='mx-auto login-container'>
@@ -63,20 +67,23 @@ export default function Login() {
                     <div className='mb-4'>
                         <label>Username</label>
                         <input
-                            type='text'
                             className='form-control'
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                         />
+                        
                     </div>
-                    <div className='mb-4'>
+                    <div className='mb-4 password-input'>
                         <label>Password</label>
                         <input
-                            type='password'
+                            type={showPassword ? 'text' : 'password'}
                             className='form-control'
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
+                        <span className='psw-icon' onClick={togglePasswordVisibility}>
+                                {showPassword ? <i className="far fa-eye"></i> : <i className="far fa-eye-slash"></i>}
+                            </span>
                     </div>
                     {error && (
                         <div className="alert alert-danger" role="alert">

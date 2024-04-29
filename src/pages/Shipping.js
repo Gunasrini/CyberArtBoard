@@ -17,6 +17,11 @@ export default function Shipping() {
                             <input type='text' className='form-control' placeholder='Last Name *' />
                         </div>
                     </div>
+                    <div className='form-row two-column'>
+                        <div className='form-column'>
+                            <input type='text' className='form-control' placeholder='Email *' />
+                        </div>
+                    </div>
                     <div className='form-row'>
                         <div className='form-column'>
                             <input type='text' className='form-control' placeholder='Street Address *' />
