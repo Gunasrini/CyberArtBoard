@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CyberArtBoard/static/css/main.d73e2252.css",
-    "main.js": "/CyberArtBoard/static/js/main.fdbf8e4b.js",
+    "main.css": "/CyberArtBoard/static/css/main.0c5db1d7.css",
+    "main.js": "/CyberArtBoard/static/js/main.96d5470a.js",
     "static/js/592.174a5230.chunk.js": "/CyberArtBoard/static/js/592.174a5230.chunk.js",
     "static/media/about-banner.png": "/CyberArtBoard/static/media/about-banner.74f196e832b21d252185.png",
     "static/media/aboutImg5.png": "/CyberArtBoard/static/media/aboutImg5.615533165934614e3cb5.png",
@@ -29,7 +29,7 @@
     "static/media/img3.png": "/CyberArtBoard/static/media/img3.1d63e12ceee028dc20d9.png",
     "static/media/generateImg3.png": "/CyberArtBoard/static/media/generateImg3.64f97ab0a7583aebd9f5.png",
     "static/media/img6.png": "/CyberArtBoard/static/media/img6.3b4da770649c24601ed2.png",
-    "static/media/logo.png": "/CyberArtBoard/static/media/logo.76cf18f8b20132a1f098.png",
+    "static/media/logo.PNG": "/CyberArtBoard/static/media/logo.76cf18f8b20132a1f098.PNG",
     "static/media/tracksuits.png": "/CyberArtBoard/static/media/tracksuits.42a3197472fee0d71c72.png",
     "static/media/hoodie top.png": "/CyberArtBoard/static/media/hoodie top.2c787be81a0a295693b0.png",
     "static/media/T-shirt.png": "/CyberArtBoard/static/media/T-shirt.e558d2f6f99eb04ab3d6.png",
@@ -40,12 +40,12 @@
     "static/media/sustainable-custom-apparel.jpg": "/CyberArtBoard/static/media/sustainable-custom-apparel.9a432175bbbbccd65c3d.jpg",
     "static/media/icon.png": "/CyberArtBoard/static/media/icon.ba47b2e6ea41a7f68ea5.png",
     "index.html": "/CyberArtBoard/index.html",
-    "main.d73e2252.css.map": "/CyberArtBoard/static/css/main.d73e2252.css.map",
-    "main.fdbf8e4b.js.map": "/CyberArtBoard/static/js/main.fdbf8e4b.js.map",
+    "main.0c5db1d7.css.map": "/CyberArtBoard/static/css/main.0c5db1d7.css.map",
+    "main.96d5470a.js.map": "/CyberArtBoard/static/js/main.96d5470a.js.map",
     "592.174a5230.chunk.js.map": "/CyberArtBoard/static/js/592.174a5230.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d73e2252.css",
-    "static/js/main.fdbf8e4b.js"
+    "static/css/main.0c5db1d7.css",
+    "static/js/main.96d5470a.js"
   ]
 }
