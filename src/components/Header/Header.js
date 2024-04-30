@@ -65,14 +65,14 @@ export default function Header() {
                     onMouseLeave={() => setShowSubMenu(false)}
                 >
                     <Link className="dropdown-item">My Account</Link>
-                    {showSubMenu && (
+                    {/* {showSubMenu && (
                         <ul className="sub-menu">
                             <li><Link className="dropdown-item">My Profile</Link></li>
                             <li><Link className="dropdown-item">My Design Library</Link></li>
                             <li><Link className="dropdown-item">Invite My Friend</Link></li>
                             <li><Link className="dropdown-item">Payment Methods</Link></li>
                         </ul>
-                    )}
+                    )} */}
                 </li>
                 <li><Link className="dropdown-item" to="/contact">Support</Link></li>
               </ul>
