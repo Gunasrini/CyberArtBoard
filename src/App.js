@@ -16,6 +16,7 @@ import MyAccount from './pages/MyAccount';
 import ContactForm from './pages/ContactForm';
 
 import '../src/styles/responsive.css';
+import PasswordReset from './PasswordReset';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/forgot-password' element={<ForgotPassword />} />
+        <Route path='/reset-password' element={<PasswordReset />} />
         <Route path="" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path='/design-generator' element={<DesignGenerator />} />
