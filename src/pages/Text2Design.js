@@ -65,7 +65,7 @@ export default function Text2Design() {
                 .then(response => response.json())
                 .then(res => {
                     const product_name = res.productName
-                        .filter(product => product.id === Number(e.target.value))
+                        .filter(product => Number(product.category) === Number(e.target.value))
                         .map(product => ({
                             value: product.id,
                             label: product.product_name
